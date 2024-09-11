@@ -82,7 +82,7 @@ function Teastimonial2() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                    I cant thank you enough for all your tremendous
+                      &amp; I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship cant vendor of choice!
                     </p>
@@ -117,7 +117,7 @@ function Teastimonial2() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                       I cant thank you enough for all your tremendous
+                      &amp; I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship cant vendor of choice!
                     </p>
@@ -152,7 +152,7 @@ function Teastimonial2() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                       I cant thank you enough for all your tremendous
+                      &amp; I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship cant vendor of choice!
                     </p>

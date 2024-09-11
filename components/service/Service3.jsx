@@ -45,7 +45,7 @@ function Service3() {
                     <Link href="/service-details">Website Devolopment</Link>
                   </h4>
                   <p className="para">
-                    We have the technology industry stw expertise to
+                    We have the technology &amp; industry stw expertise to
                     solutions and execution.
                   </p>
                 </div>
@@ -95,7 +95,7 @@ function Service3() {
                     <Link href="/service-details">Web Security</Link>
                   </h4>
                   <p className="para">
-                    We have the technology industry stw expertise to
+                    We have the technology &amp; industry stw expertise to
                     solutions and execution
                   </p>
                 </div>

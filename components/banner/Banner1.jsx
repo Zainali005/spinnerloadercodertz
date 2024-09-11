@@ -53,10 +53,11 @@ function Banner1() {
                   innovative concepts into impactful branding solutions. Our
                   team of creative experts is dedicated to understanding your
                   unique needs and crafting personalized strategies that drive
-                  success. Whether you're a startup seeking to make your mark or
-                  an established business looking to refresh your brand, we
-                  offer tailored services to help you achieve your goals.
+                  success. Whether you&apos;re a startup seeking to make your
+                  mark or an established business looking to refresh your brand,
+                  we offer tailored services to help you achieve your goals.
                 </p>
+
                 <div className="button-group gap-5">
                   <Link href="/project">
                     <a className="eg-btn btn--primary btn--lg">Discover More</a>

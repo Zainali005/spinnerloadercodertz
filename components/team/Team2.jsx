@@ -11,7 +11,7 @@ function Team2() {
               <div className="section-title2 primary4">
                 <span>- Our Team-</span>
                 <div>
-                  <h3>Meet Talent Experience</h3>
+                  <h3>Meet Talent &amp; Experience</h3>
                 </div>
               </div>
             </div>
