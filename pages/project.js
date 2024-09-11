@@ -46,7 +46,10 @@ function project() {
                           <Link href="/project-details">{item.title}</Link>
                         </h4>
                         <>
-                          <Link href="/project-details" className="text-btn">
+                          <Link
+                            href={`/project-details?id=${item.id}`}
+                            className="text-btn"
+                          >
                             Live Preview
                           </Link>
                           <svg
@@ -65,7 +68,7 @@ function project() {
                 );
               })}
             </div>
-            <Paginations />
+            {/* <Paginations /> */}
           </div>
         </div>
         <OurPartner />

@@ -206,68 +206,44 @@ export const projectData = [
   {
     id: 1,
     image: "assets/images/bg/portfolio11.png",
-    category: "Ui Illustration",
-    title: "Pocket-Sized Notebooks Hold",
+    category: "Web development",
+    title: "Copiot Travel",
+    description:
+      "Copiot Travel is a cutting-edge platform designed to streamline travel planning and booking processes. It features an intuitive interface, real-time updates, and personalized travel recommendations.",
+    client: "Sara Watson",
+    completionDate: "25 January 2022",
+    images: [
+      "assets/images/bg/project-d1.png",
+      "assets/images/bg/project-d2.png",
+    ],
   },
   {
     id: 2,
     image: "assets/images/bg/portfolio12.png",
     category: "Web development",
-    title: "A4 Size Flyer Mockup Design",
+    title: "SimoConnect",
+    description:
+      "SimoConnect is a robust communication platform that facilitates seamless interactions between users through instant messaging, video calls, and collaborative tools. It focuses on enhancing user connectivity and engagement.",
+    client: "John Doe",
+    completionDate: "10 March 2022",
+    images: [
+      "assets/images/bg/project-d3.png",
+      "assets/images/bg/project-d4.png",
+    ],
   },
   {
     id: 3,
     image: "assets/images/bg/portfolio13.png",
-    category: "Mobile App",
-    title: "Ui/Ux Illustration Design..",
-  },
-  {
-    id: 4,
-    image: "assets/images/bg/portfolio14.png",
-    category: "Graphics Design",
-    title: "3D Illustration Design",
-  },
-  {
-    id: 5,
-    image: "assets/images/bg/portfolio15.png",
-    category: "Software Sloutions",
-    title: "Energy Drinks Bottle Design",
-  },
-  {
-    id: 6,
-    image: "assets/images/bg/portfolio16.png",
-    category: "Photoshope",
-    title: "Premium Water Bottle Design",
-  },
-  {
-    id: 7,
-    image: "assets/images/bg/portfolio17.png",
-    category: "UI UX Design",
-    title: "Mobile Application Design",
-  },
-  {
-    id: 8,
-    image: "assets/images/bg/portfolio18.png",
-    category: "App Design",
-    title: "Pocket-Sized Notebooks Hold",
-  },
-  {
-    id: 9,
-    image: "assets/images/bg/portfolio19.png",
-    category: "Mockup",
-    title: "Hand Art Work Gallery",
-  },
-  {
-    id: 10,
-    image: "assets/images/bg/portfolio21.png",
-    category: "Software Solution",
-    title: "Energy Drinks Bottle Design",
-  },
-  {
-    id: 11,
-    image: "assets/images/bg/portfolio22.png",
-    category: "Digital Market Solution",
-    title: "Energy Drinks Bottle Design",
+    category: "Web development",
+    title: "Integrated Travel Component",
+    description:
+      "The Integrated Travel Component offers a comprehensive suite of features to integrate travel services into existing platforms. It provides functionalities like booking management, travel itineraries, and customer support.",
+    client: "Emily Clark",
+    completionDate: "15 June 2022",
+    images: [
+      "assets/images/bg/project-d5.png",
+      "assets/images/bg/project-d6.png",
+    ],
   },
 ];
 
@@ -300,53 +276,86 @@ export const sponsoreData = [
 export const serviceData = [
   {
     id: 1,
-    image: "assets/images/bg/service11.png",
+    image: "assets/images/bg/service11.jpg",
     icon: "assets/images/icons/webdev.svg",
-    title: "Website Devolopment",
+    title: "Product Development",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Streamline your product development with our expert solutions, reducing costs and accelerating time-to-market.",
   },
   {
     id: 2,
     image: "assets/images/bg/service12.png",
     icon: "assets/images/icons/brandsolution.svg",
-    title: "Branding Solution",
+    title: "Website Development",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Build robust and scalable websites that drive engagement and conversions.",
   },
   {
     id: 3,
     image: "assets/images/bg/service13.png",
     icon: "assets/images/icons/uiux.svg",
-    title: "UI UX Design",
+    title: "iOS/Android App Development",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Create intuitive and high-performance mobile apps for iOS and Android platforms.",
   },
   {
     id: 4,
-    image: "assets/images/bg/service11.png",
+    image: "assets/images/bg/service14.png",
     icon: "assets/images/icons/software-dev.svg",
-    title: "Software Development",
+    title: "ML Models",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Develop machine learning models that enhance data analysis and decision-making.",
   },
   {
     id: 5,
-    image: "assets/images/bg/service12.png",
+    image: "assets/images/bg/service15.png",
     icon: "assets/images/icons/video-animation.svg",
-    title: "Video Animation",
+    title: "LLM Chatbots",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Implement advanced chatbots with large language models to improve customer interactions.",
   },
   {
     id: 6,
-    image: "assets/images/bg/service13.png",
-    icon: "assets/images/icons/content-writing.svg",
-    title: "Content Writing",
+    image: "assets/images/bg/service16.png",
+    icon: "assets/images/icons/devops.svg",
+    title: "DevOps",
     description:
-      "Get the most of reduction in your team’s operating costs for the whole product",
+      "Optimize your development and operations processes for faster and more reliable deployments.",
+  },
+  {
+    id: 7,
+    image: "assets/images/bg/service17.png",
+    icon: "assets/images/icons/content-writing.svg",
+    title: "UI/UX",
+    description:
+      "Design user interfaces and experiences that are both visually appealing and user-friendly.",
+  },
+  {
+    id: 8,
+    image: "assets/images/bg/service18.png",
+    icon: "assets/images/icons/wordpress.svg",
+    title: "WordPress",
+    description:
+      "Create and manage dynamic WordPress sites with custom themes and plugins.",
+  },
+  {
+    id: 9,
+    image: "assets/images/bg/service19.png",
+    icon: "assets/images/icons/magento.svg",
+    title: "Magento",
+    description:
+      "Develop feature-rich Magento e-commerce solutions tailored to your business needs.",
+  },
+  {
+    id: 10,
+    image: "assets/images/bg/service19.png",
+    icon: "assets/images/icons/shopify.svg",
+    title: "Shopify/WooCommerce",
+    description:
+      "Build and optimize online stores using Shopify and WooCommerce for seamless shopping experiences.",
   },
 ];
+
 export const chooseUsdata = [
   {
     id: 1,

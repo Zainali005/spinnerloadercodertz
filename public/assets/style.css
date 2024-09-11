@@ -9941,3 +9941,10 @@ ul.blog-details-list li::after {
   width: 214px;
   height: 140px;
 }
+
+.service-img{
+  height: 192px;
+}
+.service-content{
+  height: 225px;
+}

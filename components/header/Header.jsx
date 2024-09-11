@@ -15,10 +15,10 @@ function reducer(state, action) {
       return { activeMenu: "project" };
     case "blog_grid":
       return { activeMenu: "blog_grid" };
-    case "blog":
-      return { activeMenu: "blog" };
-    case "Blog_standard":
-      return { activeMenu: "Blog_Standard" };
+    // case "blog":
+    //   return { activeMenu: "blog" };
+    // case "Blog_standard":
+    //   return { activeMenu: "Blog_Standard" };
     case "pages":
       return { activeMenu: "pages" };
     case "contact":
@@ -74,8 +74,8 @@ function Header() {
     const header = document.querySelector(".header-area");
     const scrollTop = window.scrollY;
     scrollTop >= 20
-      ? header.classList.add("sticky")
-      : header.classList.remove("sticky");
+      ? header?.classList.add("sticky")
+      : header?.classList.remove("sticky");
   };
   /*-----------Sticky Menu Area-----------*/
   useEffect(() => {
@@ -123,8 +123,7 @@ function Header() {
                 </div>
                 <ul className="address-list">
                   <li>
-                    <span>Address:</span>Defence Avenue Mall, DHA 1 ,
-                    Islamabad
+                    <span>Address:</span>Defence Avenue Mall, DHA 1 , Islamabad
                   </li>
                   <li>
                     <a href="tel:+92149709315">+92314 9709315</a>
@@ -272,8 +271,8 @@ function Header() {
               className="menu-item-has-children"
               onClick={() => dispatch({ type: "homeOne" })}
             >
-              <a
-                href="#"
+              <Link
+                href="/"
                 className={
                   currentRoute === "/" ||
                   currentRoute === "/index2" ||
@@ -286,67 +285,7 @@ function Header() {
                 }
               >
                 Home
-              </a>
-              <i className="bi bi-chevron-down dropdown-icon" />
-              <ul
-                className={
-                  state.activeMenu === "homeOne"
-                    ? "sub-menu d-block"
-                    : "sub-menu d-xl-block d-none"
-                }
-              >
-                <li>
-                  <Link href="/">
-                    <a className={currentRoute === "/" ? "active" : "disable"}>
-                      Home 1
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/index2">
-                    <a
-                      className={
-                        currentRoute === "/index2" ? "active" : "disable"
-                      }
-                    >
-                      Home 2
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/index3">
-                    <a
-                      className={
-                        currentRoute === "/index3" ? "page-active" : "disable"
-                      }
-                    >
-                      Home 3
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/index4">
-                    <a
-                      className={
-                        currentRoute === "/index4" ? "active" : "disable"
-                      }
-                    >
-                      Home 4
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/index5 ">
-                    <a
-                      className={
-                        currentRoute === "/index5" ? "active" : "disable"
-                      }
-                    >
-                      Home 5
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+              </Link>
             </li>
             <li
               className="menu-item-has-children"
@@ -383,11 +322,7 @@ function Header() {
                     <a>Team</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="/faq">
-                    <a>Faq</a>
-                  </Link>
-                </li>
+                <li></li>
                 <li>
                   <Link href="/job-list">
                     <a>Job List</a>
@@ -397,40 +332,6 @@ function Header() {
                   <Link href="/job-details">
                     <a>Career</a>
                   </Link>
-                </li>
-                <li onClick={handleMobileSubMenu}>
-                  <Link href="#">
-                    <a>Submenu</a>
-                  </Link>
-                  <i className="bi bi-chevron-right dropdown-icon"></i>
-                  <ul
-                    className={
-                      showMobileSubMenu === 1
-                        ? "sub-menu d-block"
-                        : "sub-menu d-xl-block d-none"
-                    }
-                  >
-                    <li>
-                      <Link href="#">
-                        <a>Child 1</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <a>Child 2</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <a>Child 3</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <a>Child 4</a>
-                      </Link>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
@@ -532,66 +433,7 @@ function Header() {
                 </li>
               </ul>
             </li>
-            <li
-              className="menu-item-has-children"
-              onClick={() => dispatch({ type: "blog" })}
-            >
-              <Link href="# ">
-                <a
-                  className={
-                    currentRoute === "/blog-grid" ||
-                    currentRoute === "/blog-details" ||
-                    currentRoute === "/blog-standard"
-                      ? "drop-down active"
-                      : " drop-down disable"
-                  }
-                >
-                  Blog
-                </a>
-              </Link>
-              <i className="bi bi-chevron-down dropdown-icon" />
-              <ul
-                className={
-                  state.activeMenu === "blog"
-                    ? "sub-menu d-block"
-                    : "sub-menu d-xl-block d-none"
-                }
-              >
-                <li>
-                  <Link href="/blog-grid">
-                    <a
-                      className={
-                        currentRoute === "/blog-grid" ? "active" : "disable"
-                      }
-                    >
-                      Blog Grid
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog-standard ">
-                    <a
-                      className={
-                        currentRoute === "/blog-standard" ? "active" : "disable"
-                      }
-                    >
-                      Blog Standard
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog-details">
-                    <a
-                      className={
-                        currentRoute === "/blog-details" ? "active" : "disable"
-                      }
-                    >
-                      Blog details
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
+
             <li>
               <Link href="/contact">
                 <a

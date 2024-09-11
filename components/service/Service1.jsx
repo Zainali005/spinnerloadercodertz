@@ -91,7 +91,7 @@ function Service1() {
                           />
                         </a>
                       </Link>{" "}
-                      <img alt="image" src="assets/images/bg/service11.png" />
+                      <img alt="image" src="assets/images/bg/service11.jpg" />
                       <div className="overlay" />
                     </div>
                     <div className="service-content">
@@ -99,11 +99,12 @@ function Service1() {
                         <img src="assets/images/icons/webdev.svg" alt="image" />
                       </div>
                       <h4>
-                        <Link href="/service-details">Website Devolopment</Link>
+                        <Link href="/service-details">Product Development</Link>
                       </h4>
                       <p className="para">
-                        Get the most of reduction in your team’s operating costs
-                        for the whole product
+                        Streamline your product development with our expert
+                        solutions, reducing costs and accelerating
+                        time-to-market.
                       </p>
                     </div>
                   </div>
@@ -138,12 +139,12 @@ function Service1() {
                       </div>
                       <h4>
                         <Link href="/service-details">
-                          <a>Branding Solution</a>
+                          <a>Website Development</a>
                         </Link>
                       </h4>
                       <p className="para">
-                        Get the most of reduction in your team’s operating costs
-                        for the whole product
+                        Build robust and scalable websites that drive engagement
+                        and conversions.
                       </p>
                     </div>
                   </div>
@@ -174,11 +175,13 @@ function Service1() {
                         <img src="assets/images/icons/uiux.svg" alt="image" />
                       </div>
                       <h4>
-                        <Link href="/service-details">Ui/Ux Design</Link>
+                        <Link href="/service-details">
+                          iOS/Android App Development
+                        </Link>
                       </h4>
                       <p className="para">
-                        Get the most of reduction in your teams operating costs
-                        for the whole product
+                        Create intuitive and high-performance mobile apps for
+                        iOS and Android platforms.
                       </p>
                     </div>
                   </div>
@@ -201,7 +204,7 @@ function Service1() {
                           />
                         </a>
                       </Link>
-                      <img alt="image" src="assets/images/bg/service12.png" />
+                      <img alt="image" src="assets/images/bg/service14.png" />
                       <div className="overlay" />
                     </div>
                     <div className="service-content">
@@ -209,11 +212,237 @@ function Service1() {
                         <img src="assets/images/icons/webdev.svg" alt="image" />
                       </div>
                       <h4>
-                        <Link href="/service-details">Grphics Design</Link>
+                        <Link href="/service-details">ML Models</Link>
                       </h4>
                       <p className="para">
-                        Get the most of reduction in your team’s operating costs
-                        for the whole product
+                        Develop machine learning models that enhance data
+                        analysis and decision-making.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service15.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img
+                          src="assets/images/icons/video-animation.svg"
+                          alt="image"
+                        />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">LLM Chatbots</Link>
+                      </h4>
+                      <p className="para">
+                        Implement advanced chatbots with large language models
+                        to improve customer interactions.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service16.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img src="assets/images/icons/devops.svg" alt="image" />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">DevOps</Link>
+                      </h4>
+                      <p className="para">
+                        Optimize your development and operations processes for
+                        faster and more reliable deployments.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service17.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img
+                          src="assets/images/icons/content-writing.svg"
+                          alt="image"
+                        />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">Ui/Ux</Link>
+                      </h4>
+                      <p className="para">
+                        Design user interfaces and experiences that are both
+                        visually appealing and user-friendly.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service18.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img
+                          src="assets/images/icons/wordpress.svg"
+                          alt="image"
+                        />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">Wordpress</Link>
+                      </h4>
+                      <p className="para">
+                        Create and manage dynamic WordPress sites with custom
+                        themes and plugins.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service19.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img
+                          src="assets/images/icons/magento.svg"
+                          alt="image"
+                        />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">Magneto</Link>
+                      </h4>
+                      <p className="para">
+                        Develop feature-rich Magento e-commerce solutions
+                        tailored to your business needs.
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="swiper-slide">
+                  <div
+                    className="service-item1 wow fadeInDown"
+                    data-wow-duration="1.5s"
+                    data-wow-delay="0.8s"
+                  >
+                    <div className="service-img">
+                      <Link href="/service-details">
+                        <a
+                          className="service-details-btn"
+                          style={{ cursor: "pointer" }}
+                        >
+                          <img
+                            src="assets/images/icons/arrow.svg"
+                            alt="image"
+                          />
+                        </a>
+                      </Link>
+                      <img alt="image" src="assets/images/bg/service19.png" />
+                      <div className="overlay" />
+                    </div>
+                    <div className="service-content">
+                      <div className="service-icon">
+                        <img
+                          src="assets/images/icons/shopify.svg"
+                          alt="image"
+                        />
+                      </div>
+                      <h4>
+                        <Link href="/service-details">Shopify/WooCommerce</Link>
+                      </h4>
+                      <p className="para">
+                        Build and optimize online stores using Shopify and
+                        WooCommerce for seamless shopping experiences.
                       </p>
                     </div>
                   </div>
