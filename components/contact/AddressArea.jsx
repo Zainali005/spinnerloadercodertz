@@ -37,7 +37,7 @@ function AddressArea() {
                   <ul className="address-list">
                     <li>
                       <span>Address:</span>
-                      Defence Avenue Mall, DHA 1 &amp;, Islamabad
+                      Defence Avenue Mall, DHA 1 , Islamabad
                     </li>
                     <li>
                       <span>Phone:</span> +92 314 9709315

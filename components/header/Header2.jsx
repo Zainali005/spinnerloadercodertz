@@ -117,7 +117,7 @@ function Header2() {
                 </div>
                 <ul className="address-list">
                   <li>
-                    <span>Address:</span>2972 Westheimer Rd. Santa &amp;,
+                    <span>Address:</span>2972 Westheimer Rd. Santa,
                     Illinois 85486
                   </li>
                   <li>

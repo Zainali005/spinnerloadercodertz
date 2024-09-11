@@ -33,7 +33,7 @@ function Blog2() {
                   <span>Ui/Ux Design</span>
                   <h4>
                     <Link href="/blog-details">
-                      How to Create a Useful &amp; Excellent Optimized Section
+                      How to Create a Useful Excellent Optimized Section
                     </Link>
                   </h4>
                   <div className="blog-meta">

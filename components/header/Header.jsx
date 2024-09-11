@@ -123,7 +123,7 @@ function Header() {
                 </div>
                 <ul className="address-list">
                   <li>
-                    <span>Address:</span>Defence Avenue Mall, DHA 1 &amp;,
+                    <span>Address:</span>Defence Avenue Mall, DHA 1 ,
                     Islamabad
                   </li>
                   <li>

@@ -84,7 +84,7 @@ function Testimonial3() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                      &amp; I cant thank you enough for all your tremendous
+                       I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship Centers vendor of choice!
                     </p>
@@ -119,7 +119,7 @@ function Testimonial3() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                      &amp; I cant thank you enough for all your tremendous
+                       I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship Centers vendor of choice!
                     </p>
@@ -154,7 +154,7 @@ function Testimonial3() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                      &amp; I cant thank you enough for all your tremendous
+                       I cant thank you enough for all your tremendous
                       skills, support and patience specially during our merger.
                       You will always be Kinship Centers vendor of choice!
                     </p>

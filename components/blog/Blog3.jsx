@@ -102,7 +102,7 @@ function Blog3() {
                       <span>Development</span>
                       <h4>
                         <Link href="/blog-details">
-                          What Is a Marketing Associate? A Job Description &amp;
+                          What Is a Marketing Associate? A Job Description 
                           Career.
                         </Link>
                       </h4>

@@ -38,7 +38,7 @@ function Footer({ footerStyle, footerImage }) {
                   <h5>Our Services</h5>
                   <ul className="footer-list">
                     <li>
-                      <Link href="/service">Strategy &amp; Research</Link>
+                      <Link href="/service">Strategy Research</Link>
                     </li>
                     <li>
                       <Link href="/service">Web Development</Link>

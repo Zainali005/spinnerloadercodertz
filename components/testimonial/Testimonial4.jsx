@@ -63,7 +63,7 @@ function Testimonial4() {
                         </div>
                         <p className="para">
                           You have been absolutely wonderful for Kinship Center,
-                          &amp; I can thank you enough for all your tremendous
+                           I can thank you enough for all your tremendous
                           skills, support and patience specia lly during our
                           merger. You will always be Kinship Center vendor of
                           choice! Lorem Ipsum is simply dumm of free available
@@ -98,7 +98,7 @@ function Testimonial4() {
                         </div>
                         <p className="para">
                           You have been absolutely wonderful for Kinship Center,
-                          &amp; I can thank you enough for all your tremendous
+                           I can thank you enough for all your tremendous
                           skills, support and patience specia lly during our
                           merger. You will always be Kinship Center vendor of
                           choice! Lorem Ipsum is simply dumm of free available
@@ -133,7 +133,7 @@ function Testimonial4() {
                         </div>
                         <p className="para">
                           You have been absolutely wonderful for Kinship Center,
-                          &amp; I can thank you enough for all your tremendous
+                           I can thank you enough for all your tremendous
                           skills, support and patience specia lly during our
                           merger. You will always be Kinship Center vendor of
                           choice! Lorem Ipsum is simply dumm of free available

@@ -29,12 +29,12 @@ function OfferSection() {
               >
                 <img src="assets/images/icons/service33.svg" alt="image" />
                 <h3>
-                  Special Discount For your frist Project Web Design &amp;
+                  Special Discount For your frist Project Web Design
                   Development.
                 </h3>
                 <p className="para">
                   Lorem Ipsum is simply dummy text of free available in market
-                  the way printing &amp; typesetting industry has been the
+                  the way printing typesetting industry has been the
                   industrys standard dummy text ever.
                 </p>
                 <Link href="/service-details">

@@ -94,7 +94,7 @@ function Testimonial5() {
                     </div>
                     <p className="para">
                       You have been absolutely wonderful for Kinship Center,
-                      &amp; I cant thank you enough for all your tremendous
+                     I cant thank you enough for all your tremendous
                       skills, You will always be Kinship Centers vendor of
                       aliquet quis aenean.
                     </p>
