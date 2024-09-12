@@ -7,7 +7,7 @@ import Blog from "../components/blog/Blog";
 import OurPartner from "../components/common/OurPartner";
 import Preloader from "../components/common/Preloader";
 import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
+import Header from "../components/header/Header3";
 import Portfolio1 from "../components/portfolio/Portfolio1";
 import Service1 from "../components/service/Service1";
 import Team1 from "../components/team/Team1";

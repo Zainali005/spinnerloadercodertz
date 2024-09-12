@@ -37,12 +37,17 @@ function Team1() {
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram" />
+                        <a
+                          href="https://www.linkedin.com/in/usamafarooq459/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="bx bxl-linkedin" />
                         </a>
                       </li>
+
                       <li>
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/usamafarooq2704">
                           <i className="bx bxl-facebook" />
                         </a>
                       </li>
@@ -74,10 +79,15 @@ function Team1() {
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram" />
+                        <a
+                          href="https://www.linkedin.com/in/mfaisal-usama/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="bx bxl-linkedin" />
                         </a>
                       </li>
+
                       <li>
                         <a href="https://www.facebook.com/">
                           <i className="bx bxl-facebook" />
@@ -111,12 +121,17 @@ function Team1() {
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram" />
+                        <a
+                          href="https://www.linkedin.com/in/szulqarnain/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="bx bxl-linkedin" />
                         </a>
                       </li>
+
                       <li>
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/s.zulqarnain.99">
                           <i className="bx bxl-facebook" />
                         </a>
                       </li>
@@ -134,7 +149,6 @@ function Team1() {
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
       </div>

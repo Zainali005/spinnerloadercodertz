@@ -9934,17 +9934,24 @@ ul.blog-details-list li::after {
   height: 63px;
   width: 104px;
 }
-.sidebar-top-area{
+.sidebar-top-area {
   height: 107px;
 }
 .sidebar-logo > img {
   width: 154px;
   height: 100px;
 }
+.sidebar-logo > a > img {
+  width: 154px;
+  height: 100px;
+}
 
-.service-img{
+.service-img {
   height: 192px;
 }
-.service-content{
+.service-content {
   height: 225px;
+}
+.closeBtnMobile {
+  cursor: pointer;
 }

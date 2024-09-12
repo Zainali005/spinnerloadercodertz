@@ -191,7 +191,7 @@ function Header2() {
         <div className="header-logo">
           <Link href="/">
             <a>
-              <img alt="image" src="/assets/images/icons/header2-logo.svg" />
+              <img alt="image" src="/assets/images/icons/header1-logo.svg" />
             </a>
           </Link>
         </div>
