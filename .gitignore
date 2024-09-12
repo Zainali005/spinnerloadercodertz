@@ -1,3 +1,22 @@
+# Node modules directory
 /node_modules/
+
+# Next.js build output
 /.next/
+
+# Environment variables file
 .env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# npm package lock
+package-lock.json
