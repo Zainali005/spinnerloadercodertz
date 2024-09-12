@@ -9,13 +9,31 @@ function Banner1() {
       <div className="banner-section1">
         <ul className="banner-social gap-5">
           <li>
-            <a href="https://www.twitter.com/">Twitter</a>
+            <a
+              href="https://www.twitter.com/codeertz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/">Facebook</a>
+            <a
+              href="https://www.facebook.com/codeertz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">Instagram</a>
+            <a
+              href="https://www.instagram.com/codeertz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
           </li>
         </ul>
         <img
