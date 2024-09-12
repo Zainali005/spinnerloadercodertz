@@ -98,7 +98,7 @@ function Header() {
           <div className="sidebar-top-area d-flex justify-content-between align-items-center">
             <div className="sidebar-logo px-4 py-3 rounded">
               <Link href="#">
-                <img src="assets/images/icons/sidebar-logo.svg" alt="image" />
+                <img src="/assets/images/icons/sidebar-logo.svg" alt="image" />
               </Link>
             </div>
             <div className="cross-icon" onClick={showSidebarMenu}>
@@ -134,7 +134,7 @@ function Header() {
                   </li>
                 </ul>
               </div>
-              <img src="assets/images/bg/office1.png" alt="image" />
+              <img src="/assets/images/bg/office1.png" alt="image" />
             </div>
             <div className="blog-widget-item mb-0">
               <div className="follow-area">
@@ -216,16 +216,16 @@ function Header() {
                 alt="image"
                 src={
                   currentRoute === "/"
-                    ? "assets/images/icons/header1-logo.svg"
+                    ? "/assets/images/icons/header1-logo.svg"
                     : currentRoute === "/index2"
-                    ? "assets/images/icons/header2-logo.svg"
+                    ? "/assets/images/icons/header2-logo.svg"
                     : currentRoute === "/index3"
-                    ? "assets/images/icons/header3-logo.svg"
+                    ? "/assets/images/icons/header3-logo.svg"
                     : currentRoute === "/index4"
-                    ? "assets/images/icons/header4-logo.svg"
+                    ? "/assets/images/icons/header4-logo.svg"
                     : currentRoute === "/index5"
-                    ? "assets/images/icons/header5-logo.svg"
-                    : "assets/images/icons/header1-logo.svg"
+                    ? "/assets/images/icons/header5-logo.svg"
+                    : "/assets/images/icons/header1-logo.svg"
                 }
               />
             </a>
@@ -242,16 +242,16 @@ function Header() {
                   style={{ width: "200px", height: "auto" }}
                   src={
                     currentRoute === "/"
-                      ? "assets/images/icons/header1-logo.svg"
+                      ? "/assets/images/icons/header1-logo.svg"
                       : currentRoute === "/index2"
-                      ? "assets/images/icons/footer2-logo.svg"
+                      ? "/assets/images/icons/footer2-logo.svg"
                       : currentRoute === "/index3"
-                      ? "assets/images/icons/footer3-logo.svg"
+                      ? "/assets/images/icons/footer3-logo.svg"
                       : currentRoute === "/index4"
-                      ? "assets/images/icons/footer4-logo.svg"
+                      ? "/assets/images/icons/footer4-logo.svg"
                       : currentRoute === "/index5"
-                      ? "assets/images/icons/footer5-logo.svg"
-                      : "assets/images/icons/header1-logo.svg"
+                      ? "/assets/images/icons/footer5-logo.svg"
+                      : "/assets/images/icons/header1-logo.svg"
                   }
                 />
               </Link>
@@ -388,50 +388,16 @@ function Header() {
               className="menu-item-has-children"
               onClick={() => dispatch({ type: "project" })}
             >
-              <a
-                href="#"
+              <Link
+                href="/project"
                 className={
-                  currentRoute === "/project" ||
-                  currentRoute === "/project-details"
+                  currentRoute === "/project"
                     ? "drop-down active"
                     : " drop-down disable"
                 }
               >
                 Projects
-              </a>
-              <i className="bi bi-chevron-down dropdown-icon" />
-              <ul
-                className={
-                  state.activeMenu === "project"
-                    ? "sub-menu d-block"
-                    : "sub-menu d-xl-block d-none"
-                }
-              >
-                <li>
-                  <Link href="/project ">
-                    <a
-                      className={
-                        currentRoute === "/project" ? "active" : "disable"
-                      }
-                    >
-                      Projects
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/project-details ">
-                    <a
-                      className={
-                        currentRoute === "/project-details"
-                          ? "active"
-                          : "disable"
-                      }
-                    >
-                      Projects Details
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+              </Link>
             </li>
 
             <li>
@@ -532,9 +498,6 @@ function Header() {
                 </h5>
               </div>
               <div className="header-icons d-flex align-items-center">
-                <div className="search-btn" onClick={handleSearchbarBtn}>
-                  <i className="bi bi-search" />
-                </div>
                 <div className="sidebar-btn" onClick={showSidebarMenu}>
                   <i
                     className={

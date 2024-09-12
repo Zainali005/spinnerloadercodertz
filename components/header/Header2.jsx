@@ -91,7 +91,7 @@ function Header2() {
               <Link href="#">
                 <a>
                   {" "}
-                  <img src="assets/images/icons/sidebar-logo.svg" alt="image" />
+                  <img src="/assets/images/icons/sidebar-logo.svg" alt="image" />
                 </a>
               </Link>
             </div>
@@ -128,7 +128,7 @@ function Header2() {
                   </li>
                 </ul>
               </div>
-              <img src="assets/images/bg/office1.png" alt="image" />
+              <img src="/assets/images/bg/office1.png" alt="image" />
             </div>
             <div className="blog-widget-item mb-0">
               <div className="follow-area">
@@ -191,7 +191,7 @@ function Header2() {
         <div className="header-logo">
           <Link href="/">
             <a>
-              <img alt="image" src="assets/images/icons/header2-logo.svg" />
+              <img alt="image" src="/assets/images/icons/header2-logo.svg" />
             </a>
           </Link>
         </div>
@@ -202,7 +202,7 @@ function Header2() {
             <div className="mobile-logo-wrap ">
               <Link href="/">
                 <a>
-                  <img alt="image"   style={{ width: '200px', height: 'auto' }} src="assets/images/icons/footer2-logo.svg" />
+                  <img alt="image"   style={{ width: '200px', height: 'auto' }} src="/assets/images/icons/footer2-logo.svg" />
                 </a>
               </Link>
             </div>

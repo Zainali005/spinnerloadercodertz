@@ -205,44 +205,47 @@ export const blogStandardData = [
 export const projectData = [
   {
     id: 1,
-    image: "assets/images/bg/portfolio11.png",
+    image: "/assets/images/bg/portfolio11.png",
     category: "Web development",
     title: "Copiot Travel",
+    link: "https://www.copilottravel.com/",
     description:
       "Copiot Travel is a cutting-edge platform designed to streamline travel planning and booking processes. It features an intuitive interface, real-time updates, and personalized travel recommendations.",
     client: "Sara Watson",
     completionDate: "25 January 2022",
     images: [
-      "assets/images/bg/project-d1.png",
-      "assets/images/bg/project-d2.png",
+      "/assets/images/bg/project-d1.png",
+      "/assets/images/bg/project-d2.png",
     ],
   },
   {
     id: 2,
-    image: "assets/images/bg/portfolio12.png",
+    image: "/assets/images/bg/portfolio12.png",
     category: "Web development",
     title: "SimoConnect",
+    link: "https://simoconnect.com/",
     description:
       "SimoConnect is a robust communication platform that facilitates seamless interactions between users through instant messaging, video calls, and collaborative tools. It focuses on enhancing user connectivity and engagement.",
     client: "John Doe",
     completionDate: "10 March 2022",
     images: [
-      "assets/images/bg/project-d3.png",
-      "assets/images/bg/project-d4.png",
+      "/assets/images/bg/project-d3.png",
+      "/assets/images/bg/project-d4.png",
     ],
   },
   {
     id: 3,
-    image: "assets/images/bg/portfolio13.png",
+    image: "/assets/images/bg/portfolio13.png",
     category: "Web development",
     title: "Integrated Travel Component",
+    link: "https://www.integratedtravelcomponent.com/",
     description:
       "The Integrated Travel Component offers a comprehensive suite of features to integrate travel services into existing platforms. It provides functionalities like booking management, travel itineraries, and customer support.",
     client: "Emily Clark",
     completionDate: "15 June 2022",
     images: [
-      "assets/images/bg/project-d5.png",
-      "assets/images/bg/project-d6.png",
+      "/assets/images/bg/project-d5.png",
+      "/assets/images/bg/project-d6.png",
     ],
   },
 ];

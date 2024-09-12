@@ -5,7 +5,7 @@ function Breadcrumb({ pageName, pageTitle, id }) {
     <>
       <div className="inner-banner">
         <img
-          src="assets/images/bg/inner-bannerdot.png"
+          src="/assets/images/bg/inner-bannerdot.png"
           className="inner-bannerdot"
           alt="image"
         />

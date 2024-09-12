@@ -83,7 +83,7 @@ return (
         <div className="sidebar-top-area d-flex justify-content-between align-items-center">
           <div className="sidebar-logo px-4 py-3 rounded">
             <Link href="#">
-              <a><img src="assets/images/icons/sidebar-logo.svg" alt="image" /></a>
+              <a><img src="/assets/images/icons/sidebar-logo.svg" alt="image" /></a>
             </Link>
           </div>
           <div className="cross-icon" onClick={showSidebarMenu}>
@@ -119,7 +119,7 @@ return (
                 </li>
               </ul>
             </div>
-            <img src="assets/images/bg/office1.png" alt="image" />
+            <img src="/assets/images/bg/office1.png" alt="image" />
           </div>
           <div className="blog-widget-item mb-0">
             <div className="follow-area">
@@ -179,14 +179,14 @@ return (
       <header className="header-area style-1 style-3">
         <div className="header-logo">
           <Link href="/">
-            <a><img alt="image" src="assets/images/icons/header3-logo.svg" /></a>
+            <a><img alt="image" src="/assets/images/icons/header3-logo.svg" /></a>
           </Link>
         </div>
         <div className={showMobileMenu === 1 ? "main-nav show-menu" :"main-nav"}>
           <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
             <div className="mobile-logo-wrap ">
               <Link href="/">
-                <img alt="image"   style={{ width: '200px', height: 'auto' }} src="assets/images/icons/footer3-logo.svg" />
+                <img alt="image"   style={{ width: '200px', height: 'auto' }} src="/assets/images/icons/footer3-logo.svg" />
               </Link>
             </div>
             <div onClick={handleMobileMenu} className="menu-close-btn">

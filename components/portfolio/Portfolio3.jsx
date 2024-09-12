@@ -39,11 +39,11 @@ function Portfolio3() {
                   <div className="overlay-content">
                     <p>Plugin</p>
                     <h4>
-                      <Link href="/project-details">
+                      <Link href="/">
                         Pocket-Sized Notebooks Hold Minia Ture.
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>
@@ -67,7 +67,7 @@ function Portfolio3() {
                         A4 Size Flyer Mockup Design.
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>
@@ -91,7 +91,7 @@ function Portfolio3() {
                         Ui/Ux Illustration Design..
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>
@@ -115,7 +115,7 @@ function Portfolio3() {
                         PPocket-Sized Notebooks Ture Paintings
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>
@@ -139,7 +139,7 @@ function Portfolio3() {
                         Amazing web card design with overlay.
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>
@@ -163,7 +163,7 @@ function Portfolio3() {
                         SEO Optimization for your website.
                       </Link>
                     </h4>
-                    <Link href="/project-details">
+                    <Link href="/s">
                       <a className="overlay-arrow">
                         <i className="bi bi-arrow-up-right" />
                       </a>

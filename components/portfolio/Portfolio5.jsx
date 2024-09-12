@@ -84,12 +84,12 @@ function Portfolio5() {
                     <div className="portfolio-content">
                       <span>App Design</span>
                       <h4>
-                        <Link href="/project-details">
+                        <Link href="/">
                           Pocket-Sized Phone Hold
                         </Link>
                       </h4>
                       <>
-                        <Link href="/project-details" className="text-btn">
+                        <Link href="/" className="text-btn">
                           Live Preview
                         </Link>
                         <svg
@@ -117,12 +117,12 @@ function Portfolio5() {
                     <div className="portfolio-content">
                       <span>Mockup</span>
                       <h4>
-                        <Link href="/project-details">
+                        <Link href="/">
                           A4 Size Flyer Mockup Design
                         </Link>
                       </h4>
                       <>
-                        <Link href="/project-details" className="text-btn">
+                        <Link href="/" className="text-btn">
                           Live Preview
                         </Link>
                         <svg
@@ -150,12 +150,12 @@ function Portfolio5() {
                     <div className="portfolio-content">
                       <span>Ui Illustration</span>
                       <h4>
-                        <Link href="/project-details">
+                        <Link href="/">
                           Ui/Ux Illustration Design..
                         </Link>
                       </h4>
                       <>
-                        <Link href="/project-details" className="text-btn">
+                        <Link href="/" className="text-btn">
                           Live Preview
                         </Link>
                         <svg
@@ -183,12 +183,12 @@ function Portfolio5() {
                     <div className="portfolio-content">
                       <span>App Design</span>
                       <h4>
-                        <Link href="/project-details">
+                        <Link href="/">
                           Pocket-Sized Notebooks Hold
                         </Link>
                       </h4>
                       <>
-                        <Link href="/project-details" className="text-btn">
+                        <Link href="/" className="text-btn">
                           Live Preview
                         </Link>
                         <svg

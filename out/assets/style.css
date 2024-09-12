@@ -9928,16 +9928,23 @@ ul.blog-details-list li::after {
   height: 70px;
 }
 .header-logo > a > img {
-  height: 70px;
+  height: 63px;
 }
 .footer-item > a > img {
-  height: 140px;
-  width: 214px;
+  height: 63px;
+  width: 104px;
 }
 .sidebar-top-area{
   height: 107px;
 }
 .sidebar-logo > img {
-  width: 214px;
-  height: 140px;
+  width: 154px;
+  height: 100px;
+}
+
+.service-img{
+  height: 192px;
+}
+.service-content{
+  height: 225px;
 }

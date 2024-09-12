@@ -82,9 +82,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>Bottle Design</span>
-                      <h4><Link href="/project-details">Worlds best bottle bottle design</Link></h4>
+                      <h4><Link href="/">Worlds best bottle bottle design</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -102,9 +102,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>Mockup</span>
-                      <h4><Link href="/project-details">Pocket-Sized Notebooks Hold</Link></h4>
+                      <h4><Link href="/">Pocket-Sized Notebooks Hold</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -121,9 +121,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>App Design</span>
-                      <h4><Link href="/project-details">Pocket-Sized Mobile Phone</Link></h4>
+                      <h4><Link href="/">Pocket-Sized Mobile Phone</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -140,9 +140,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>App Design</span>
-                      <h4><Link href="/project-details">App Interface Design</Link></h4>
+                      <h4><Link href="/">App Interface Design</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -159,9 +159,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>Illustration</span>
-                      <h4><Link href="/project-details">Ui/Ux Best Illustration</Link></h4>
+                      <h4><Link href="/">Ui/Ux Best Illustration</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -178,9 +178,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>App Design</span>
-                      <h4><Link href="/project-details">App Interface Design</Link></h4>
+                      <h4><Link href="/">App Interface Design</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />
@@ -197,9 +197,9 @@ function Portfolio4() {
                     </div>
                     <div className="portfolio-content">
                       <span>App Design</span>
-                      <h4><Link href="/project-details">Pocket-Sized Mobile Phone</Link></h4>
+                      <h4><Link href="/">Pocket-Sized Mobile Phone</Link></h4>
                       <>
-                      <Link href="/project-details" className="text-btn">Live Preview
+                      <Link href="/" className="text-btn">Live Preview
                       </Link>
                       <svg width={18} height={10} viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.1818 1.38021V5V8.61979C11.1818 8.78083 11.3624 8.87583 11.4951 8.7846L17 5L11.4951 1.2154C11.3624 1.12417 11.1818 1.21917 11.1818 1.38021Z" />

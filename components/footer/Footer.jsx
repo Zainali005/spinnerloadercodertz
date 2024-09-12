@@ -12,7 +12,7 @@ function Footer({ footerStyle, footerImage }) {
               <div className="col-lg-3 col-md-6">
                 <div className="footer-item">
                   <a href="#">
-                    <img alt="image" src={footerImage} />
+                    <img alt="image" src={`/${footerImage}`} />
                   </a>
                   <p>
                     Delivering cutting-edge technology solutions and expert
@@ -26,7 +26,7 @@ function Footer({ footerStyle, footerImage }) {
                       <button type="submit">
                         <img
                           alt="image"
-                          src="assets/images/icons/send-icon.svg"
+                          src="/assets/images/icons/send-icon.svg"
                         />
                       </button>
                     </div>

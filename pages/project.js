@@ -43,15 +43,18 @@ function project() {
                       <div className="portfolio-content">
                         <span>{item.category}</span>
                         <h4>
-                          <Link href="/project-details">{item.title}</Link>
+                          <Link href="/project">{item.title}</Link>
                         </h4>
                         <>
-                          <Link
-                            href={`/project-details?id=${item.id}`}
-                            className="text-btn"
+                          <a
+                            href={item.link}
+                            className="text-btn cursor-pointer"
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Live Preview
-                          </Link>
+                          </a>
+
                           <svg
                             width={18}
                             height={10}

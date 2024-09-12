@@ -90,7 +90,7 @@ function Header4() {
               <Link href="#">
                 <a>
                   {" "}
-                  <img src="assets/images/icons/sidebar-logo.svg" alt="image" />
+                  <img src="/assets/images/icons/sidebar-logo.svg" alt="image" />
                 </a>
               </Link>
             </div>
@@ -127,7 +127,7 @@ function Header4() {
                   </li>
                 </ul>
               </div>
-              <img src="assets/images/bg/office1.png" alt="image" />
+              <img src="/assets/images/bg/office1.png" alt="image" />
             </div>
             <div className="blog-widget-item mb-0">
               <div className="follow-area">
@@ -192,7 +192,7 @@ function Header4() {
             <a>
               <img
                 alt="image"
-                src="assets/images/icons/header4-logo.svg"
+                src="/assets/images/icons/header4-logo.svg"
                 className="img-fluid"
               />
             </a>
@@ -205,7 +205,7 @@ function Header4() {
             <div className="mobile-logo-wrap ">
               <Link href="/">
                 <a>
-                  <img alt="image"   style={{ width: '200px', height: 'auto' }} src="assets/images/icons/footer4-logo.svg" />
+                  <img alt="image"   style={{ width: '200px', height: 'auto' }} src="/assets/images/icons/footer4-logo.svg" />
                 </a>
               </Link>
             </div>

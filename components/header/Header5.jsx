@@ -89,7 +89,10 @@ function Header5() {
             <div className="sidebar-logo px-4 py-3 rounded">
               <Link href="#">
                 <a>
-                  <img src="assets/images/icons/sidebar-logo.svg" alt="image" />
+                  <img
+                    src="/assets/images/icons/sidebar-logo.svg"
+                    alt="image"
+                  />
                 </a>
               </Link>
             </div>
@@ -126,7 +129,7 @@ function Header5() {
                   </li>
                 </ul>
               </div>
-              <img src="assets/images/bg/office1.png" alt="image" />
+              <img src="/assets/images/bg/office1.png" alt="image" />
             </div>
             <div className="blog-widget-item mb-0">
               <div className="follow-area">
@@ -191,7 +194,7 @@ function Header5() {
             <a>
               <img
                 alt="image"
-                src="assets/images/icons/header5-logo.svg"
+                src="/assets/images/icons/header5-logo.svg"
                 className="img-fluid"
               />
             </a>
@@ -207,7 +210,7 @@ function Header5() {
                   <img
                     alt="image"
                     style={{ width: "200px", height: "auto" }}
-                    src="assets/images/icons/footer5-logo.svg"
+                    src="/assets/images/icons/footer5-logo.svg"
                   />
                 </a>
               </Link>
