@@ -38,22 +38,25 @@ function Footer({ footerStyle, footerImage }) {
                   <h5>Our Services</h5>
                   <ul className="footer-list">
                     <li>
-                      <Link href="/service">Strategy Research</Link>
+                      <Link href="/service">Product Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">Web Development</Link>
+                      <Link href="/service">Website Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">Web Solution</Link>
+                      <Link href="/service">iOS/Android App Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">Digital Merketing</Link>
+                      <Link href="/service">ML Models</Link>
                     </li>
                     <li>
-                      <Link href="/service">App Design</Link>
+                      <Link href="/service">LLM Chatbots</Link>
                     </li>
                     <li>
-                      <Link href="/service">App Development</Link>
+                      <Link href="/service">DevOps</Link>
+                    </li>
+                    <li>
+                      <Link href="/service">See more...</Link>
                     </li>
                   </ul>
                 </div>
@@ -72,13 +75,13 @@ function Footer({ footerStyle, footerImage }) {
                       <Link href="/project">Our Portfolio</Link>
                     </li>
                     <li>
-                      <Link href="/blog-grid">Our Blog</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog-grid">Latest News</Link>
-                    </li>
-                    <li>
                       <Link href="/contact">Contact Us</Link>
+                    </li>
+                    <li>
+                      <Link href="/job-details">Career</Link>
+                    </li>
+                    <li>
+                      <Link href="/team">Team</Link>
                     </li>
                   </ul>
                 </div>

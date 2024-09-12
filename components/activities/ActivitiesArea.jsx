@@ -62,23 +62,9 @@ function Activities() {
                     >
                       <div className="coundown d-flex flex-column">
                         <h2 className="odometer">
-                          <CountUp end={550} delay={2} duration={5} /> +
+                          <CountUp end={50} delay={2} duration={5} />+
                         </h2>
-                        <Link href="#">Team member</Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-10 col-10">
-                    <div
-                      className="counter-single text-center d-flex flex-row wow animate fadeInDown"
-                      data-wow-duration="1.5s"
-                      data-wow-delay="0.6s"
-                    >
-                      <div className="coundown d-flex flex-column">
-                        <h2 className="odometer" data-odometer-final={330}>
-                          <CountUp end={100} delay={2} duration={5} /> +
-                        </h2>
-                        <Link href="#">Team member</Link>
+                        <Link href="#">Team Members</Link>
                       </div>
                     </div>
                   </div>
@@ -90,9 +76,23 @@ function Activities() {
                     >
                       <div className="coundown d-flex flex-column">
                         <h2 className="odometer">
-                          <CountUp end={250} delay={2} duration={5} /> +
+                          <CountUp end={120} delay={2} duration={5} />+
                         </h2>
-                        <Link href="#">Team member</Link>
+                        <Link href="#">Projects Delivered</Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6 col-sm-10 col-10">
+                    <div
+                      className="counter-single text-center d-flex flex-row wow animate fadeInDown"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.6s"
+                    >
+                      <div className="coundown d-flex flex-column">
+                        <h2 className="odometer">
+                          <CountUp end={15} delay={2} duration={5} />+
+                        </h2>
+                        <Link href="#">Partners</Link>
                       </div>
                     </div>
                   </div>
@@ -104,9 +104,9 @@ function Activities() {
                     >
                       <div className="coundown d-flex flex-column">
                         <h2 className="odometer">
-                          <CountUp end={350} delay={2} duration={5} /> +
+                          <CountUp end={25} delay={2} duration={5} />+
                         </h2>
-                        <Link href="#">Awards Winner</Link>
+                        <Link href="#">Awards Won</Link>
                       </div>
                     </div>
                   </div>

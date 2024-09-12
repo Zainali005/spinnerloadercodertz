@@ -40,7 +40,6 @@ export default function Home() {
           <Activities />
           <Team1 />
           <Testimonial1 />
-          <Blog />
           <OurPartner />
           <Footer footerImage="assets/images/icons/footer1-logo.svg" />
         </>

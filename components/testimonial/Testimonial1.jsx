@@ -81,9 +81,7 @@ function Testimonial1() {
                         <p>Co Founder</p>
                       </div>
                       <p>
-                        The Pacific Grove Chamber of Commerce would like to
-                        thank eLab Communications and Mr. Will Elkadi for all
-                        the efforts and suggestions that assisted.{" "}
+                      The exceptional service provided by this team exceeded our expectations and played a pivotal role in our project’s success.
                       </p>
                     </div>
                   </div>
@@ -110,9 +108,7 @@ function Testimonial1() {
                         <p>Founder</p>
                       </div>
                       <p>
-                        The Pacific Grove Chamber of Commerce would like to
-                        thank eLab Communications and Mr. Will Elkadi for all
-                        the efforts and suggestions that assisted.{" "}
+                      Their innovative approach and dedication to quality made a huge difference in the outcome of our project.
                       </p>
                     </div>
                   </div>
@@ -139,9 +135,7 @@ function Testimonial1() {
                         <p>Manager</p>
                       </div>
                       <p>
-                        The Pacific Grove Chamber of Commerce would like to
-                        thank eLab Communications and Mr. Will Elkadi for all
-                        the efforts and suggestions that assisted.{" "}
+                      Their expertise and professionalism were key in delivering outstanding results that truly impressed our clients.
                       </p>
                     </div>
                   </div>
