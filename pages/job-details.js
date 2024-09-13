@@ -13,42 +13,55 @@ function JobDetails() {
             <div className="row d-flex justify-content-center gy-5">
               <div className="col-lg-6">
                 <div className="job-details-wrap">
-                  <h3>UX Researcher Job Description</h3>
+                  <h3>Job Description</h3>
                   <p className="para mb-4">
-                    A UX Researcher is a professional who systematically studies
-                    target users to collect and analyze data that will help
-                    inform the product design process.
+                    We are looking for a highly skilled and motivated individual
+                    to join our team. The successful candidate will be
+                    responsible for contributing to various projects, working in
+                    a collaborative environment, and bringing innovative
+                    solutions to the table.
                   </p>
                   <h4>Job brief :</h4>
                   <p className="para">
-                    We are looking for a UX Researcher to join our team and
-                    implement various UX designs into our programs and computer
-                    systems based on the need of users to ensure customers have
-                    an enjoyable experience when using our products.{" "}
+                    As a team member, you will work closely with other
+                    professionals to deliver high-quality results. You will be
+                    involved in all phases of the project, from concept to
+                    execution, ensuring that the final product meets both client
+                    and company standards.
                   </p>
                   <p className="para mb-4">
-                    UX Researcher responsibilities include conducting user
-                    research and working with the design team to implement
-                    design choices to improve user experience.
+                    Responsibilities include working on multiple projects,
+                    collaborating with cross-functional teams, and adapting to
+                    fast-paced changes in a dynamic work environment.
                   </p>
                   <h4>Responsibilities :</h4>
                   <ul className="about-list">
-                    <li>Price of additional materials or parts (if needed)</li>
                     <li>
-                      Transportation cost for carrying new materials/parts
+                      Collaborate with team members to ensure timely project
+                      delivery
                     </li>
-                    <li>Interpreting services is our specialty</li>
+                    <li>Develop and implement project strategies</li>
+                    <li>
+                      Maintain high-quality work standards and attention to
+                      detail
+                    </li>
+                    <li>
+                      Manage client expectations and ensure customer
+                      satisfaction
+                    </li>
                   </ul>
-                  <h4>Software Skill’s :</h4>
+                  <h4>Required Skills :</h4>
                   <p className="para">
-                    Adobe Photoshop, Illustrator, Figma, Adobe XD, Sketch etc{" "}
+                    Excellent communication, problem-solving, and time
+                    management skills. Familiarity with project management tools
+                    and software is a plus.
                   </p>
                   <h4>Salary :</h4>
-                  <p className="para">25K to 100k </p>
+                  <p className="para">Competitive and based on experience</p>
                   <h4>Job Type :</h4>
-                  <p className="para">Remote/ Office</p>
+                  <p className="para">Full-Time/ Part-Time/ Remote</p>
                   <h4>Location :</h4>
-                  <p className="para">House#01, Road#05, XYZ</p>
+                  <p className="para">Defence Avenue Mall, DHA 1, Islamabad</p>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -56,7 +69,7 @@ function JobDetails() {
                   <div className="apply-form-title">
                     <h4>Apply for a Position:</h4>
                     <p>
-                      Please complete the form below to apply for a position :
+                      Please complete the form below to apply for a position:
                     </p>
                   </div>
                   <form>
@@ -74,7 +87,7 @@ function JobDetails() {
                         <div className="form-inner">
                           <input
                             type="text"
-                            name="fname"
+                            name="phone"
                             placeholder="Phone Number:"
                           />
                         </div>
@@ -83,8 +96,8 @@ function JobDetails() {
                         <div className="form-inner">
                           <input
                             type="text"
-                            name="fname"
-                            placeholder="Typing for Position :"
+                            name="position"
+                            placeholder="Applying for Position:"
                           />
                         </div>
                       </div>
@@ -92,7 +105,7 @@ function JobDetails() {
                         <div className="form-inner">
                           <input
                             type="text"
-                            name="fname"
+                            name="experience"
                             placeholder="Experience:"
                           />
                         </div>
@@ -100,26 +113,25 @@ function JobDetails() {
                       <div className="col-lg-12">
                         <div className="form-inner">
                           <textarea
-                            name="message"
+                            name="coverLetter"
                             cols={30}
                             rows={6}
-                            placeholder="Cover Letter :"
-                            defaultValue={""}
+                            placeholder="Cover Letter:"
                           />
                         </div>
                       </div>
                       <div className="col-lg-12">
                         <div className="form-inner">
                           <label htmlFor="cv" className="mb-3">
-                            Upload Resume :
+                            Upload Resume:
                           </label>
-                          <input type="file" />
+                          <input type="file" name="resume" />
                         </div>
                       </div>
                       <div className="col-lg-12 text-center">
                         <input
                           type="submit"
-                          defaultValue="Send Now"
+                          value="Send Now"
                           className="eg-btn btn--submit"
                         />
                       </div>

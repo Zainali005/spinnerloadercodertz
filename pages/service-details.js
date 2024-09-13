@@ -171,13 +171,21 @@ function serviceDetails() {
                     className="img-fluid"
                     alt="image"
                   />
-                  <h3>Are You Too Old for a Career in Web Development?</h3>
+                  <h3>Explore Our Comprehensive Services</h3>
                   <p className="para">
-                    The world of programming is full of fresh-faced coding
-                    prodigies barely out of their teens, dealing simultaneously
-                    with buggy code and acne. Or this is the reality that films
-                    and Netflix shows would have us believe.{" "}
+                    Our team offers a wide range of services designed to meet
+                    the evolving needs of businesses in today&#39;s fast-paced
+                    digital environment. From web development and design to
+                    digital marketing strategies, we provide solutions that
+                    drive growth and innovation.
                   </p>
+                  <p className="para">
+                    Whether you&#39;re looking to revamp your website, enhance
+                    your online presence, or streamline your digital operations,
+                    our experts are here to deliver top-notch service tailored
+                    to your goals.
+                  </p>
+
                   <p className="para mb-30">
                     With this in mind, is there a place for “older” developers
                     in the workforce? Is it too late to change into this field
