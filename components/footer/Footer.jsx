@@ -55,18 +55,22 @@ function Footer({ footerStyle, footerImage }) {
                     how we can support your success.
                   </p>
 
-                  <form action="https://script.google.com/macros/s/AKfycbyGYiAqKSI_QTsjyvSGg6H5V8AYl-Rmlwo69JQmcVZy0w8zgixAX5c-XnWGkyC1w8k/exec">
+                  <form
+                    action="https://script.google.com/macros/s/AKfycbx-tmLECY89vF-SfnbswasnpSLrUpYToixmW2RJkvntmPmAAgeZgbZCa22FeogVvK0/exec"
+                    method="POST"
+                  >
                     <div className="input-with-btn d-flex justify-content-start align-items-stretch">
                       <input
                         type="text"
                         placeholder="Enter your email"
+                        name="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
                       />
                       <button type="submit">
                         <img
-                          alt="image"
+                          alt="send icon"
                           src="/assets/images/icons/send-icon.svg"
                         />
                       </button>
