@@ -90,7 +90,7 @@ function Service1() {
                             alt="image"
                           />
                         </a>
-                      </Link>{" "}
+                      </Link>
                       <img alt="image" src="assets/images/bg/service11.jpg" />
                       <div className="overlay" />
                     </div>
@@ -109,6 +109,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -126,7 +127,7 @@ function Service1() {
                             alt="image"
                           />
                         </a>
-                      </Link>{" "}
+                      </Link>
                       <img alt="image" src="assets/images/bg/service12.png" />
                       <div className="overlay" />
                     </div>
@@ -138,9 +139,7 @@ function Service1() {
                         />
                       </div>
                       <h4>
-                        <Link href="/service-details">
-                          <a>Website Development</a>
-                        </Link>
+                        <Link href="/service-details">Website Development</Link>
                       </h4>
                       <p className="para">
                         Build robust and scalable websites that drive engagement
@@ -149,6 +148,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -166,7 +166,7 @@ function Service1() {
                             alt="image"
                           />
                         </a>
-                      </Link>{" "}
+                      </Link>
                       <img alt="image" src="assets/images/bg/service13.png" />
                       <div className="overlay" />
                     </div>
@@ -186,6 +186,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -221,6 +222,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -259,6 +261,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -324,7 +327,7 @@ function Service1() {
                         />
                       </div>
                       <h4>
-                        <Link href="/service-details">Ui/Ux</Link>
+                        <Link href="/service-details">UI/UX</Link>
                       </h4>
                       <p className="para">
                         Design user interfaces and experiences that are both
@@ -333,6 +336,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -362,7 +366,7 @@ function Service1() {
                         />
                       </div>
                       <h4>
-                        <Link href="/service-details">Wordpress</Link>
+                        <Link href="/service-details">WordPress</Link>
                       </h4>
                       <p className="para">
                         Create and manage dynamic WordPress sites with custom
@@ -371,6 +375,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -400,7 +405,7 @@ function Service1() {
                         />
                       </div>
                       <h4>
-                        <Link href="/service-details">Magneto</Link>
+                        <Link href="/service-details">Magento</Link>
                       </h4>
                       <p className="para">
                         Develop feature-rich Magento e-commerce solutions
@@ -409,6 +414,7 @@ function Service1() {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide className="swiper-slide">
                   <div
                     className="service-item1 wow fadeInDown"
@@ -427,7 +433,7 @@ function Service1() {
                           />
                         </a>
                       </Link>
-                      <img alt="image" src="assets/images/bg/service19.png" />
+                      <img alt="image" src="assets/images/bg/service20.png" />
                       <div className="overlay" />
                     </div>
                     <div className="service-content">

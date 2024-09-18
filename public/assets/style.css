@@ -6158,9 +6158,10 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu > li a.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 50px;
+  margin-top: 46px; 
+  /* padding-bottom: 50px;
   padding-top: 190px;
-  margin-top: -150px;
+  margin-top: -150px; */
 }
 @media (max-width: 991px) {
   .company-counter {

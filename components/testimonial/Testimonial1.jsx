@@ -1,7 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
-SwiperCore.use([Navigation, Pagination, Autoplay, Navigation]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
+
 function Testimonial1() {
   const testimonialSlider = {
     slidesPerView: "auto",
@@ -32,6 +33,13 @@ function Testimonial1() {
       },
     },
   };
+  const cardStyle = {
+    height: "300px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  };
+
   return (
     <>
       <div className="testimonial-section pb-120">
@@ -44,11 +52,11 @@ function Testimonial1() {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <div className="section-title primary5">
-                <span>-Testimonial-</span>
-                <h3>What They’re Saying</h3>
+                <span>-Testimonials-</span>
+                <h3>What Our Clients Are Saying</h3>
                 <p className="para">
-                  Get the most of reduction in your team’s operating costs for
-                  the whole product which creates amazing UI/UX experiences.
+                  Discover how our services have transformed the way businesses
+                  operate.
                 </p>
               </div>
             </div>
@@ -64,6 +72,7 @@ function Testimonial1() {
                     className="testimonial-single hover-border1 wow fadeInDown"
                     data-wow-duration="1.5s"
                     data-wow-delay=".2s"
+                    style={cardStyle}
                   >
                     <img
                       alt="image"
@@ -75,13 +84,14 @@ function Testimonial1() {
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
-                        <h5>
-                          <div>Ronald Richards</div>
-                        </h5>
-                        <p>Co Founder</p>
+                        <h5>Jane Doe</h5>
+                        <p>Marketing Director at Tech Innovations</p>
                       </div>
                       <p>
-                      The exceptional service provided by this team exceeded our expectations and played a pivotal role in our project’s success.
+                        "The team's insights were invaluable in refining our
+                        marketing strategy. Their expertise not only boosted our
+                        engagement but also helped us achieve record sales this
+                        quarter."
                       </p>
                     </div>
                   </div>
@@ -91,6 +101,7 @@ function Testimonial1() {
                     className="testimonial-single hover-border1 wow fadeInDown"
                     data-wow-duration="1.5s"
                     data-wow-delay=".4s"
+                    style={cardStyle}
                   >
                     <img
                       alt="image"
@@ -102,13 +113,14 @@ function Testimonial1() {
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
-                        <h5>
-                          <div>Marvin McKinney</div>
-                        </h5>
-                        <p>Founder</p>
+                        <h5>Michael Smith</h5>
+                        <p>CEO of Green Solutions</p>
                       </div>
                       <p>
-                      Their innovative approach and dedication to quality made a huge difference in the outcome of our project.
+                        "Working with this team has been a game changer for us.
+                        Their attention to detail and commitment to
+                        sustainability align perfectly with our values. We’ve
+                        seen a significant increase in customer satisfaction."
                       </p>
                     </div>
                   </div>
@@ -118,6 +130,7 @@ function Testimonial1() {
                     className="testimonial-single hover-border1 wow fadeInDown"
                     data-wow-duration="1.5s"
                     data-wow-delay=".4s"
+                    style={cardStyle}
                   >
                     <img
                       alt="image"
@@ -125,24 +138,24 @@ function Testimonial1() {
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="image" src="assets/images/bg/testi11.png" />
+                      <img alt="image" src="assets/images/bg/testi13.png" />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
-                        <h5>
-                          <div>Marvin McKinneys</div>
-                        </h5>
-                        <p>Manager</p>
+                        <h5>Emily Johnson</h5>
+                        <p>Product Manager at Future Tech</p>
                       </div>
                       <p>
-                      Their expertise and professionalism were key in delivering outstanding results that truly impressed our clients.
+                        "The collaboration was seamless, and the final product
+                        exceeded our expectations. Their team was proactive and
+                        understood our vision perfectly."
                       </p>
                     </div>
                   </div>
                 </SwiperSlide>
               </div>
             </Swiper>
-            <div className="slider-arrows text-center d-xl-flex d-none  justify-content-between">
+            <div className="slider-arrows text-center d-xl-flex d-none justify-content-between">
               <div
                 className="testi-prev1 swiper-prev-arrow"
                 tabIndex={0}
