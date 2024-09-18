@@ -17,22 +17,32 @@ function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    try {
-      const response = await axios.post("/api/send-mail", formData);
-      setStatus(response.data.message);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      setStatus("Failed to send email");
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+
+    const response = await fetch("/api/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      alert("Email sent successfully!");
+    } else {
+      alert("Error sending email: " + data.error);
     }
-  };
+  }
 
   return (
     <div className="form-section pt-120 pb-120" id="contact">

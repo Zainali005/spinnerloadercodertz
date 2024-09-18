@@ -1,65 +1,30 @@
-// import nodemailer from "nodemailer";
+// /pages/api/send-email.js
+import { Resend } from 'resend';
 
-// export default async function handler(req, res) {
-//   if (req.method === "POST") {
-//     const { name, email, phone, subject, message } = req.body;
-//     const transporter = nodemailer.createTransport({
-//       service: "Gmail",
-//       auth: {
-//         user: process.env.EMAIL_USER,
-//         pass: process.env.EMAIL_PASS,
-//       },
-//     });
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-//     const mailOptions = {
-//       from: email,
-//       to: process.env.EMAIL_USER,
-//       subject: `New Contact Form Submission: ${subject}`,
-//       text: `
-//         Name: ${name}
-//         Email: ${email}
-//         Phone: ${phone}
-//         Subject: ${subject}
-//         Message: ${message}
-//       `,
-//     };
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { name, email, phone, subject, message } = req.body;
 
-//     try {
-//       await transporter.sendMail(mailOptions);
-//       res.status(200).json({ message: "Email sent successfully!" });
-//     } catch (error) {
-//       console.error("Error sending email:", error);
-//       res.status(500).json({ error: "Failed to send email" });
-//     }
-//   } else {
-//     res.status(405).json({ error: "Method not allowed" });
-//   }
-// }
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const nodemailer = require('nodemailer')
+    try {
+      const response = await resend.emails.send({
+        from: 'noreply@yourdomain.com', // Use a verified email address or domain
+        to: 'your-email@domain.com', // Your receiving email address
+        subject: subject || 'Contact via Website',
+        html: `
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Phone:</b> ${phone}</p>
+          <p><b>Message:</b> ${message}</p>
+        `,
+      });
 
-export default function handler(req, res) {
-
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    host: 'smtp.gmail.com',
-    auth: {
-      user:"zainali5002@gmail.com", 
-      pass: "aczkmjkcatkbyxjc", 
-    },
-  })
-
-  transporter.sendMail({
-    from: `"Website Contact Form" <${"zainali5002@gmail.com"}>`, 
-    to: "zainali5002@gmail.com",
-    replyTo: req.body.email, 
-    subject: req.body.subject || "Contact via Website", // Use the subject from the form
-    text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phone}\nMessage: ${req.body.message}`, 
-    html: `<b>Name:</b> ${req.body.name}<br/>
-           <b>Email:</b> ${req.body.email}<br/>
-           <b>Phone:</b> ${req.body.phone}<br/>
-           <b>Subject:</b> ${req.body.subject}<br/>
-           <b>Message:</b> ${req.body.message}`,
-  }).then((response) => {res.send(response)})
-  .catch(error => {res.send(error)})
+      res.status(200).json({ success: true, data: response });
+    } catch (error) {
+      res.status(500).json({ success: false, error: error.message });
+    }
+  } else {
+    res.status(405).json({ message: 'Method not allowed' });
+  }
 }
