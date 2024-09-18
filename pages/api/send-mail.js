@@ -9,8 +9,8 @@ export default async function handler(req, res) {
 
     try {
       const response = await resend.emails.send({
-        from: 'noreply@yourdomain.com', // Use a verified email address or domain
-        to: 'your-email@domain.com', // Your receiving email address
+        from: 'zainali5002@gmail.com', // Use a verified email address or domain
+        to: 'zainali5002@gmail.com', // Your receiving email address
         subject: subject || 'Contact via Website',
         html: `
           <p><b>Name:</b> ${name}</p>

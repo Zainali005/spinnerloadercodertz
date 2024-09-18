@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -10,9 +10,7 @@ function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState("");
-  setTimeout(() => {
-    setStatus("");
-  }, 3000);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -20,28 +18,34 @@ function ContactForm() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
+    try {
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      );
 
-    const response = await fetch("/api/send-mail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await response.json();
-    if (data.success) {
-      alert("Email sent successfully!");
-    } else {
-      alert("Error sending email: " + data.error);
+      if (response.status === 200) {
+        setStatus("Email sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setStatus(`Error sending email: ${response.text}`);
+      }
+    } catch (error) {
+      setStatus("An error occurred. Please try again.");
     }
+
+    // Clear status after 3 seconds
+    setTimeout(() => {
+      setStatus("");
+    }, 3000);
   }
 
   return (
