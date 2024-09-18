@@ -1,8 +1,43 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 
 function Footer({ footerStyle, footerImage }) {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbxF3Tu-aj0se3H0GYBO6eBog2a0sA86iWLwUpUTkd__TwlZCtoKDnEXox2kq4RN8dU/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ Email: email }), // Make sure 'Email' matches the key in the script
+        }
+      );
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
+      const data = await res.json();
+
+      if (data.status === "success") {
+        setMessage("Email saved successfully!");
+        setEmail("");
+      } else {
+        setMessage(data.message);
+      }
+    } catch (error) {
+      console.error("Error submitting email:", error);
+      setMessage("There was an error submitting your email.");
+    }
+  };
+
   return (
     <>
       <footer className={footerStyle}>
@@ -20,9 +55,15 @@ function Footer({ footerStyle, footerImage }) {
                     how we can support your success.
                   </p>
 
-                  <form>
-                    <div className="input-with-btn d-flex jusify-content-start align-items-strech">
-                      <input type="text" placeholder="Enter your email" />
+                  <form action="https://script.google.com/macros/s/AKfycbyGYiAqKSI_QTsjyvSGg6H5V8AYl-Rmlwo69JQmcVZy0w8zgixAX5c-XnWGkyC1w8k/exec">
+                    <div className="input-with-btn d-flex justify-content-start align-items-stretch">
+                      <input
+                        type="text"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
                       <button type="submit">
                         <img
                           alt="image"
@@ -30,6 +71,7 @@ function Footer({ footerStyle, footerImage }) {
                         />
                       </button>
                     </div>
+                    {message && <p>{message}</p>}
                   </form>
                 </div>
               </div>
@@ -125,31 +167,13 @@ function Footer({ footerStyle, footerImage }) {
                         viewBox="0 0 18 18"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path d="M0 2.25C0 1.65326 0.237053 1.08097 0.65901 0.65901C1.08097 0.237053 1.65326 0 2.25 0L15.75 0C16.3467 0 16.919 0.237053 17.341 0.65901C17.7629 1.08097 18 1.65326 18 2.25V11.25C18 11.8467 17.7629 12.419 17.341 12.841C16.919 13.2629 16.3467 13.5 15.75 13.5H4.96575C4.66741 13.5001 4.3813 13.6186 4.17037 13.8296L0.96075 17.0392C0.882147 17.1181 0.781932 17.1718 0.672791 17.1936C0.563649 17.2154 0.450486 17.2044 0.347624 17.1618C0.244763 17.1193 0.156827 17.0473 0.0949469 16.9547C0.0330667 16.8622 2.36417e-05 16.7534 0 16.6421L0 2.25ZM3.9375 3.375C3.78832 3.375 3.64524 3.43426 3.53975 3.53975C3.43426 3.64524 3.375 3.78832 3.375 3.9375C3.375 4.08668 3.43426 4.22976 3.53975 4.33525C3.64524 4.44074 3.78832 4.5 3.9375 4.5H14.0625C14.2117 4.5 14.3548 4.44074 14.4602 4.33525C14.5657 4.22976 14.625 4.08668 14.625 3.9375C14.625 3.78832 14.5657 3.64524 14.4602 3.53975C14.3548 3.43426 14.2117 3.375 14.0625 3.375H3.9375ZM3.9375 6.1875C3.78832 6.1875 3.64524 6.24676 3.53975 6.35225C3.43426 6.45774 3.375 6.60082 3.375 6.75C3.375 6.89918 3.43426 7.04226 3.53975 7.14775C3.64524 7.25324 3.78832 7.3125 3.9375 7.3125H14.0625C14.2117 7.3125 14.3548 7.25324 14.4602 7.14775C14.5657 7.04226 14.625 6.89918 14.625 6.75C14.625 6.60082 14.5657 6.45774 14.4602 6.35225C14.3548 6.24676 14.2117 6.1875 14.0625 6.1875H3.9375ZM3.9375 9C3.78832 9 3.64524 9.05926 3.53975 9.16475C3.43426 9.27024 3.375 9.41332 3.375 9.5625C3.375 9.71168 3.43426 9.85476 3.53975 9.96025C3.64524 10.0657 3.78832 10.125 3.9375 10.125H9.5625C9.71168 10.125 9.85476 10.0657 9.96025 9.96025C10.0657 9.85476 10.125 9.71168 10.125 9.5625C10.125 9.41332 10.0657 9.27024 9.96025 9.16475C9.85476 9.05926 9.71168 9 9.5625 9H3.9375Z" />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M2.44818 0C1.33262 0 0.5 0.832621 0.5 1.94818V16.0518C0.5 17.1674 1.33262 18 2.44818 18H15.5518C16.6674 18 17.5 17.1674 17.5 16.0518V1.94818C17.5 0.832621 16.6674 0 15.5518 0H2.44818ZM2.5 1.94818C2.5 1.7544 2.67358 1.59056 2.85938 1.59056H15.1406C15.3264 1.59056 15.5 1.7544 15.5 1.94818V16.0518C15.5 16.2456 15.3264 16.4094 15.1406 16.4094H2.85938C2.67358 16.4094 2.5 16.2456 2.5 16.0518V1.94818Z"
+                        />
                       </svg>
-                      <a href="mailto:info@codeertz.com">info@codeertz.com</a>
-                    </li>
-                  </ul>
-                  <ul className="footer-social gap-3">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pinterest.com/">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
+                      <a href="mailto:info@company.com">info@company.com</a>
                     </li>
                   </ul>
                 </div>
@@ -159,22 +183,20 @@ function Footer({ footerStyle, footerImage }) {
         </div>
         <div className="footer-bottom">
           <div className="container">
-            <div className="row d-flex align-items-center g-3">
-              <div className="col-lg-6 d-flex justify-content-lg-start justify-content-center">
+            <div className="row align-items-center">
+              <div className="col-md-6">
                 <p>
-                  Copyright 2024{" "}
-                  <Link href="#" className="egns-lab">
-                    CodeErtz
-                  </Link>{" "}
+                  &copy; {new Date().getFullYear()} Your Company. All rights
+                  reserved.
                 </p>
               </div>
-              <div className="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
-                <ul className="f-bottom-list d-flex jusify-content-start align-items-center">
+              <div className="col-md-6 d-flex justify-content-md-end">
+                <ul className="footer-bottom-list">
                   <li>
-                    <Link href="/contact">Privacy Policy</Link>
+                    <Link href="/terms">Terms of Service</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Terms of Use</Link>
+                    <Link href="/privacy">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>

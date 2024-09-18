@@ -89,10 +89,10 @@ function Testimonial1() {
                         <p>Marketing Director at Tech Innovations</p>
                       </div>
                       <p>
-                        &quot;The team&apos;s insights were invaluable in refining our
-                        marketing strategy. Their expertise not only boosted our
-                        engagement but also helped us achieve record sales this
-                        quarter.&quot;
+                        &quot;The team&apos;s insights were invaluable in
+                        refining our marketing strategy. Their expertise not
+                        only boosted our engagement but also helped us achieve
+                        record sales this quarter.&quot;
                       </p>
                     </div>
                   </div>
@@ -110,7 +110,10 @@ function Testimonial1() {
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="Michael Smith" src="assets/images/bg/testi12.png" />
+                      <img
+                        alt="Michael Smith"
+                        src="assets/images/bg/testi12.png"
+                      />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
@@ -118,10 +121,11 @@ function Testimonial1() {
                         <p>CEO of Green Solutions</p>
                       </div>
                       <p>
-                        &quot;Working with this team has been a game changer for us.
-                        Their attention to detail and commitment to
-                        sustainability align perfectly with our values. We&apos;ve
-                        seen a significant increase in customer satisfaction.&quot;
+                        &quot;Working with this team has been a game changer for
+                        us. Their attention to detail and commitment to
+                        sustainability align perfectly with our values.
+                        We&apos;ve seen a significant increase in customer
+                        satisfaction.&quot;
                       </p>
                     </div>
                   </div>
@@ -139,7 +143,10 @@ function Testimonial1() {
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="Emily Johnson" src="assets/images/bg/testi13.png" />
+                      <img
+                        alt="Emily Johnson"
+                        src="assets/images/bg/testi13.png"
+                      />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
@@ -147,9 +154,9 @@ function Testimonial1() {
                         <p>Product Manager at Future Tech</p>
                       </div>
                       <p>
-                        &quot;The collaboration was seamless, and the final product
-                        exceeded our expectations. Their team was proactive and
-                        understood our vision perfectly.&quot;
+                        &quot;The collaboration was seamless, and the final
+                        product exceeded our expectations. Their team was
+                        proactive and understood our vision perfectly.&quot;
                       </p>
                     </div>
                   </div>
