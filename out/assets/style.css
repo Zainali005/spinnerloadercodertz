@@ -6159,7 +6159,6 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu > li a.active {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 46px; 
-
   /* padding-bottom: 50px;
   padding-top: 190px;
   margin-top: -150px; */
@@ -9936,18 +9935,24 @@ ul.blog-details-list li::after {
   height: 63px;
   width: 104px;
 }
-.sidebar-top-area{
+.sidebar-top-area {
   height: 107px;
 }
 .sidebar-logo > img {
   width: 154px;
   height: 100px;
 }
+.sidebar-logo > a > img {
+  width: 154px;
+  height: 100px;
+}
 
-.service-img{
+.service-img {
   height: 192px;
 }
-.service-content{
-  height: 225px;
+.service-content {
+  height: 238px;
 }
-
+.closeBtnMobile {
+  cursor: pointer;
+}

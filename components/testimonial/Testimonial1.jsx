@@ -33,6 +33,7 @@ function Testimonial1() {
       },
     },
   };
+
   const cardStyle = {
     height: "300px",
     display: "flex",
@@ -75,12 +76,12 @@ function Testimonial1() {
                     style={cardStyle}
                   >
                     <img
-                      alt="image"
+                      alt="quote icon"
                       src="assets/images/icons/quote-icon.svg"
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="image" src="assets/images/bg/testi11.png" />
+                      <img alt="Jane Doe" src="assets/images/bg/testi11.png" />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
@@ -88,10 +89,10 @@ function Testimonial1() {
                         <p>Marketing Director at Tech Innovations</p>
                       </div>
                       <p>
-                        "The team's insights were invaluable in refining our
+                        &quot;The team&apos;s insights were invaluable in refining our
                         marketing strategy. Their expertise not only boosted our
                         engagement but also helped us achieve record sales this
-                        quarter."
+                        quarter.&quot;
                       </p>
                     </div>
                   </div>
@@ -104,12 +105,12 @@ function Testimonial1() {
                     style={cardStyle}
                   >
                     <img
-                      alt="image"
+                      alt="quote icon"
                       src="assets/images/icons/quote-icon.svg"
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="image" src="assets/images/bg/testi12.png" />
+                      <img alt="Michael Smith" src="assets/images/bg/testi12.png" />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
@@ -117,10 +118,10 @@ function Testimonial1() {
                         <p>CEO of Green Solutions</p>
                       </div>
                       <p>
-                        "Working with this team has been a game changer for us.
+                        &quot;Working with this team has been a game changer for us.
                         Their attention to detail and commitment to
-                        sustainability align perfectly with our values. We’ve
-                        seen a significant increase in customer satisfaction."
+                        sustainability align perfectly with our values. We&apos;ve
+                        seen a significant increase in customer satisfaction.&quot;
                       </p>
                     </div>
                   </div>
@@ -133,12 +134,12 @@ function Testimonial1() {
                     style={cardStyle}
                   >
                     <img
-                      alt="image"
+                      alt="quote icon"
                       src="assets/images/icons/quote-icon.svg"
                       className="quote-icon"
                     />
                     <div className="testi-img">
-                      <img alt="image" src="assets/images/bg/testi13.png" />
+                      <img alt="Emily Johnson" src="assets/images/bg/testi13.png" />
                     </div>
                     <div className="testi-content">
                       <div className="testi-designation">
@@ -146,9 +147,9 @@ function Testimonial1() {
                         <p>Product Manager at Future Tech</p>
                       </div>
                       <p>
-                        "The collaboration was seamless, and the final product
+                        &quot;The collaboration was seamless, and the final product
                         exceeded our expectations. Their team was proactive and
-                        understood our vision perfectly."
+                        understood our vision perfectly.&quot;
                       </p>
                     </div>
                   </div>
