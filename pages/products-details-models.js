@@ -44,7 +44,7 @@ function serviceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    you're 30 or above?
+                    you are 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to ML Model Development
