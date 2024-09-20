@@ -8,33 +8,27 @@ function Footer({ footerStyle, footerImage }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const formData = new FormData();
+    formData.append("Email", email);
+
     try {
-      const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbxF3Tu-aj0se3H0GYBO6eBog2a0sA86iWLwUpUTkd__TwlZCtoKDnEXox2kq4RN8dU/exec",
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwPVZZHFYX-CBaeV4FxwE0RfINmRn2CX_ZgxeQQ5EAlS0_k3Xnfilv79AB6ZNI0OsQ/exec",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ Email: email }), // Make sure 'Email' matches the key in the script
+          body: formData,
         }
       );
 
-      if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
-      }
-
-      const data = await res.json();
-
-      if (data.status === "success") {
-        setMessage("Email saved successfully!");
-        setEmail("");
+      if (response.ok) {
+        setMessage("Thank you for subscribing!"); 
+        setEmail(""); 
       } else {
-        setMessage(data.message);
+        setMessage("Something went wrong. Please try again."); 
       }
     } catch (error) {
-      console.error("Error submitting email:", error);
-      setMessage("There was an error submitting your email.");
+      console.error("Error submitting the form:", error);
+      setMessage("Something went wrong. Please try again."); 
     }
   };
 
@@ -55,10 +49,7 @@ function Footer({ footerStyle, footerImage }) {
                     how we can support your success.
                   </p>
 
-                  <form
-                    action="https://script.google.com/macros/s/AKfycbx-tmLECY89vF-SfnbswasnpSLrUpYToixmW2RJkvntmPmAAgeZgbZCa22FeogVvK0/exec"
-                    method="POST"
-                  >
+                  <form onSubmit={handleSubmit}>
                     <div className="input-with-btn d-flex justify-content-start align-items-stretch">
                       <input
                         type="text"
@@ -75,7 +66,7 @@ function Footer({ footerStyle, footerImage }) {
                         />
                       </button>
                     </div>
-                    {message && <p>{message}</p>}
+                    {message && <p>{message}</p>} 
                   </form>
                 </div>
               </div>

@@ -35,31 +35,31 @@ function Activities() {
           </div>
           <div className="row justify-content-center">
             <div className="activities-area d-flex flex-wrap justify-content-center">
-              <div className="activity-item p-3">
+              <div className="activity p-3 para">
                 <strong>Traditions and Festivals:</strong> Our culture is rich
                 with vibrant festivals and traditions that celebrate community,
                 family, and spirituality. Events like Diwali, Eid, and Christmas
                 bring people together in joyous celebrations.
               </div>
-              <div className="activity-item p-3">
+              <div className="activity-item p-3 para">
                 <strong>Diverse Cuisine:</strong> Our food reflects a blend of
                 flavors and ingredients, showcasing regional specialties. From
                 spicy curries to sweet desserts, our cuisine emphasizes the
                 importance of sharing meals with loved ones.
               </div>
-              <div className="activity-item p-3">
+              <div className="activity-item p-3 para">
                 <strong>Art and Craft:</strong> Our culture is home to various
                 forms of art, including traditional music, dance, and
                 handicrafts. These art forms often tell stories and convey
                 historical significance, preserving our heritage.
               </div>
-              <div className="activity-item p-3">
+              <div className="activity-item p-3 para">
                 <strong>Respect for Elders:</strong> There’s a strong emphasis
                 on family values and respect for elders. Elders are seen as
                 keepers of wisdom, and their guidance is highly valued in
                 decision-making.
               </div>
-              <div className="activity-item p-3">
+              <div className="activity-item p-3 para">
                 <strong>Community and Hospitality:</strong> A sense of community
                 is central to our culture. Hospitality is a cherished value,
                 with open arms welcoming guests and friends alike, creating

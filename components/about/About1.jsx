@@ -22,14 +22,20 @@ function About1() {
                   We are committed to providing our customers with exceptional.
                 </h3>
                 <p className="para">
-  At CodeErtz, we deliver innovative technology solutions tailored to your needs. With our expertise in advanced strategies and digital solutions, we help you achieve your goals efficiently and effectively.
-</p>
-
-
+                  At CodeErtz, we deliver innovative technology solutions
+                  tailored to your needs. With our expertise in advanced
+                  strategies and digital solutions, we help you achieve your
+                  goals efficiently and effectively.
+                </p>
                 <ul className="about-list">
-                  <li>Price of additional materials or parts (if needed)</li>
-                  <li>Transportation cost for carrying new materials/parts</li>
-                  <li>Interpreting services is our specialty</li>
+                  <li>Comprehensive web and mobile application development</li>
+                  <li>Strategic digital marketing and SEO services</li>
+                  <li>
+                    Custom software solutions to meet unique business needs
+                  </li>
+                  <li>
+                    Expert consulting for technology adoption and transformation
+                  </li>
                 </ul>
                 <Link href="/about">
                   <a

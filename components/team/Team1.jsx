@@ -45,17 +45,6 @@ function Team1() {
                           <i className="bx bxl-linkedin" />
                         </a>
                       </li>
-
-                      <li>
-                        <a href="https://www.facebook.com/usamafarooq2704">
-                          <i className="bx bxl-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter" />
-                        </a>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -87,17 +76,6 @@ function Team1() {
                           <i className="bx bxl-linkedin" />
                         </a>
                       </li>
-
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter" />
-                        </a>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -127,17 +105,6 @@ function Team1() {
                           rel="noopener noreferrer"
                         >
                           <i className="bx bxl-linkedin" />
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="https://www.facebook.com/s.zulqarnain.99">
-                          <i className="bx bxl-facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter" />
                         </a>
                       </li>
                     </ul>

@@ -80,7 +80,7 @@ function Banner1() {
                   <Link href="/project">
                     <a className="eg-btn btn--primary btn--lg">Discover More</a>
                   </Link>
-                  <div
+                  {/* <div
                     onClick={() => setOpen(true)}
                     style={{ cursor: "pointer" }}
                     className="btn-with-vdo d-flex align-items-center gap-4"
@@ -91,7 +91,7 @@ function Banner1() {
                       </div>
                     </div>
                     <div className="video-btn">How it works</div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

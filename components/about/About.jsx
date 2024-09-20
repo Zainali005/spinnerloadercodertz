@@ -29,9 +29,9 @@ function About() {
                 </p>
 
                 <ul className="about-list">
-                  <li>Price of additional materials or parts (if needed)</li>
-                  <li>Transportation cost for carrying new materials/parts</li>
-                  <li>Interpreting services is our specialty</li>
+                  <li>Customized solutions tailored to client needs</li>
+                  <li>Expert consultation in digital transformation</li>
+                  <li>Ongoing support and maintenance services</li>
                 </ul>
                 <p className="para">
                   Since the advent of the Internet and e-commerce, a growing
