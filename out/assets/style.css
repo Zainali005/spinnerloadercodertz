@@ -94,7 +94,7 @@ Template Name: Naftend
 }
 :root {
   /*color Variable*/
-  --primary-color1: rgb(230, 0, 76);
+  --primary-color1: #06093b;
   --primary-opcaity: rgba(230, 0, 76, 0.1);
   --primary-color2: rgb(0, 202, 235);
   --primary-opcaity2: rgba(0, 202, 235, 0.1);
@@ -487,7 +487,7 @@ i.bx {
   position: absolute;
   top: 0%;
   left: 0%;
-  background: #a044ff;
+  background: #06093b;
   transition: all 0.52s;
   z-index: -1;
   border-radius: 5px;

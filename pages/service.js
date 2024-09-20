@@ -24,7 +24,7 @@ function service() {
                       data-wow-delay="0.2s"
                     >
                       <div className="service-img">
-                        <Link onClick={scrollTop} href="/service-details">
+                        <Link onClick={scrollTop} href={item.href}>
                           <a
                             className="service-details-btn"
                             style={{ cursor: "pointer" }}

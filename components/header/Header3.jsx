@@ -271,28 +271,9 @@ function Header3() {
               className="menu-item-has-children"
               onClick={() => dispatch({ type: "service" })}
             >
-              <Link href="#" className="drop-down">
+              <Link href="/service" className="drop-down">
                 <a>Services</a>
               </Link>
-              <i className="bi bi-chevron-down dropdown-icon" />
-              <ul
-                className={
-                  state.activeMenu === "service"
-                    ? "sub-menu d-block"
-                    : "sub-menu d-none"
-                }
-              >
-                <li>
-                  <Link href="/service">
-                    <a>Services</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/service-details">
-                    <a>Services Details</a>
-                  </Link>
-                </li>
-              </ul>
             </li>
             <li
               className="menu-item-has-children"

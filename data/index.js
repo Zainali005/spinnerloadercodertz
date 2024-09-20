@@ -282,6 +282,7 @@ export const serviceData = [
     image: "assets/images/bg/service11.jpg",
     icon: "assets/images/icons/webdev.svg",
     title: "Product Development",
+    href: "/products-details-product",
     description:
       "Streamline your product development with our expert solutions, reducing costs and accelerating time-to-market.",
   },
@@ -290,6 +291,8 @@ export const serviceData = [
     image: "assets/images/bg/service12.png",
     icon: "assets/images/icons/brandsolution.svg",
     title: "Website Development",
+    href: "/products-details-website",
+
     description:
       "Build robust and scalable websites that drive engagement and conversions.",
   },
@@ -298,6 +301,8 @@ export const serviceData = [
     image: "assets/images/bg/service13.png",
     icon: "assets/images/icons/uiux.svg",
     title: "iOS/Android App Development",
+    href: "/products-details-app",
+
     description:
       "Create intuitive and high-performance mobile apps for iOS and Android platforms.",
   },
@@ -306,6 +311,8 @@ export const serviceData = [
     image: "assets/images/bg/service14.png",
     icon: "assets/images/icons/software-dev.svg",
     title: "ML Models",
+    href: "/products-details-models",
+
     description:
       "Develop machine learning models that enhance data analysis and decision-making.",
   },
@@ -313,6 +320,8 @@ export const serviceData = [
     id: 5,
     image: "assets/images/bg/service15.png",
     icon: "assets/images/icons/video-animation.svg",
+    href: "/products-details-chatbots",
+
     title: "LLM Chatbots",
     description:
       "Implement advanced chatbots with large language models to improve customer interactions.",
@@ -321,6 +330,8 @@ export const serviceData = [
     id: 6,
     image: "assets/images/bg/service16.png",
     icon: "assets/images/icons/devops.svg",
+    href: "/products-details-devOps",
+
     title: "DevOps",
     description:
       "Optimize your development and operations processes for faster and more reliable deployments.",
@@ -328,6 +339,8 @@ export const serviceData = [
   {
     id: 7,
     image: "assets/images/bg/service17.png",
+    href: "/products-details-ui",
+
     icon: "assets/images/icons/content-writing.svg",
     title: "UI/UX",
     description:
@@ -337,6 +350,8 @@ export const serviceData = [
     id: 8,
     image: "assets/images/bg/service18.png",
     icon: "assets/images/icons/wordpress.svg",
+    href: "/products-details-wordpress",
+
     title: "WordPress",
     description:
       "Create and manage dynamic WordPress sites with custom themes and plugins.",
@@ -345,6 +360,8 @@ export const serviceData = [
     id: 9,
     image: "assets/images/bg/service19.png",
     icon: "assets/images/icons/magento.svg",
+    href: "/products-details-magento",
+
     title: "Magento",
     description:
       "Develop feature-rich Magento e-commerce solutions tailored to your business needs.",
@@ -352,6 +369,8 @@ export const serviceData = [
   {
     id: 10,
     image: "assets/images/bg/service19.png",
+    href: "/products-details-shopify",
+
     icon: "assets/images/icons/shopify.svg",
     title: "Shopify/WooCommerce",
     description:

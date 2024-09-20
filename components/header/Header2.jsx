@@ -351,11 +351,11 @@ function Header2() {
                 <li>
                   <Link href="/service">Services</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/service-details">
                     <a>Services Details</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li
