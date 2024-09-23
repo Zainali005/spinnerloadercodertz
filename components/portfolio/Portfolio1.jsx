@@ -79,22 +79,28 @@ function Portfolio1() {
                     data-wow-delay="0.2s"
                   >
                     <div className="portfolio-img">
-                      <img alt="image" src="assets/images/bg/portfolio11.png" />
+                      <img alt="image" src="assets/images/bg/portfolio13.png" />
                     </div>
                     <div className="portfolio-content">
                       <span>Website development</span>
                       <h4>
-                        <Link href="https://www.copilottravel.com/">
+                        <a
+                          href="https://www.copilottravel.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Copiot Travel
-                        </Link>
+                        </a>
                       </h4>
                       <>
-                        <Link
+                        <a
                           href="https://www.copilottravel.com/"
                           className="text-btn"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <svg
                           width={18}
                           height={10}
@@ -120,15 +126,23 @@ function Portfolio1() {
                     <div className="portfolio-content">
                       <span>Website development</span>
                       <h4>
-                        <Link href="https://simoconnect.com/">SimoConnect</Link>
+                        <a
+                          href="https://simoconnect.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          SimoConnect
+                        </a>
                       </h4>
                       <>
-                        <Link
+                        <a
                           href="https://simoconnect.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-btn"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <svg
                           width={18}
                           height={10}
@@ -149,22 +163,28 @@ function Portfolio1() {
                     data-wow-delay="0.6s"
                   >
                     <div className="portfolio-img">
-                      <img alt="image" src="assets/images/bg/portfolio13.png" />
+                      <img alt="image" src="assets/images/bg/portfolio11.png" />
                     </div>
                     <div className="portfolio-content">
                       <span>Website development</span>
                       <h4>
-                        <Link href="https://www.integratedtravelcomponent.com/">
+                        <a
+                          href="https://www.integratedtravelcomponent.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Integrated Travel Component
-                        </Link>
+                        </a>
                       </h4>
                       <>
-                        <Link
+                        <a
                           href="https://www.integratedtravelcomponent.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-btn"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <svg
                           width={18}
                           height={10}
@@ -190,15 +210,23 @@ function Portfolio1() {
                     <div className="portfolio-content">
                       <span>Website development</span>
                       <h4>
-                        <Link href="https://www.pikamoon.io/">Pikamoon</Link>
+                        <a
+                          href="https://www.pikamoon.io/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Pikamoon
+                        </a>
                       </h4>
                       <>
-                        <Link
+                        <a
                           href="https://www.pikamoon.io/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-btn"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <svg
                           width={18}
                           height={10}
@@ -227,15 +255,23 @@ function Portfolio1() {
                     <div className="portfolio-content">
                       <span>Website development</span>
                       <h4>
-                        <Link href="https://www.omertagame.com/">Omerta</Link>
+                        <a
+                          href="https://www.omertagame.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Omerta
+                        </a>
                       </h4>
                       <>
-                        <Link
+                        <a
                           href="https://www.omertagame.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-btn"
                         >
                           Live Preview
-                        </Link>
+                        </a>
                         <svg
                           width={18}
                           height={10}

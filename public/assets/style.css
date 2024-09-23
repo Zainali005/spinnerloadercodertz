@@ -96,14 +96,14 @@ Template Name: Naftend
   /*color Variable*/
   --primary-color1: #49d0c4;
   --primary-opcaity: rgba(230, 0, 76, 0.1);
-  --primary-color2: rgb(0, 202, 235);
+  --primary-color2: #06093B;
   --primary-opcaity2: rgba(0, 202, 235, 0.1);
-  --primary-color3: rgb(160, 68, 255);
+  --primary-color3: #06093B;
   --primary-opcaity3: rgba(160, 68, 255, 0.1);
   --primary-color4: rgb(39, 174, 96);
   --primary-opcaity4: rgba(39, 174, 96, 0.1);
   --primary-color4-light: #f6fffc;
-  --primary-color5: rgb(255, 115, 66);
+  --primary-color5: #06093B;
   --primary-opcaity5: rgba(255, 76, 76, 0.1);
   --primary-color6: rgb(47, 128, 237);
   --primary-opcaity6: rgba(47, 128, 237, 0.1);
