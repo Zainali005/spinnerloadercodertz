@@ -731,7 +731,7 @@ i.bx {
   background: var(--primary-opcaity4);
 }
 .section-title.primary5 span {
-  color: var(--primary-color5);
+  color: var(--primary-color3);
   background: var(--primary-opcaity5);
 }
 
@@ -4042,7 +4042,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu > li a.active {
 .about1-content span {
   font-size: 16px;
   font-weight: 500;
-  color: var(--primary-color1);
+  color: var(--primary-color3);
   font-family: "Poppins", sans-serif;
   background: var(--primary-opcaity);
   padding: 5px 10px;
