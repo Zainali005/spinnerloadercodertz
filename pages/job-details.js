@@ -1,150 +1,373 @@
-import React from "react";
+// import React, { useState } from "react";
+// import Breadcrumb from "../components/common/Breadcrumb";
+// import JoinOurTeam from "../components/common/JoinOurTeam";
+// import Layout from "../components/layout/index";
+
+// function JobDetails() {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     phone: "",
+//     position: "",
+//     experience: "",
+//     coverLetter: "",
+//     email: "", // Added email field
+//   });
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       const response = await fetch("/api/send-mail", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       });
+
+//       if (response.ok) {
+//         alert("Application submitted successfully!");
+//         setFormData({
+//           name: "",
+//           phone: "",
+//           position: "",
+//           experience: "",
+//           coverLetter: "",
+//           email: "",
+//         });
+//       } else {
+//         alert("Error submitting application. Please try again.");
+//       }
+//     } catch (error) {
+//       console.error("Error:", error);
+//       alert("Error submitting application. Please try again.");
+//     }
+//   };
+
+//   return (
+//     <Layout>
+//       <Breadcrumb pageTitle="Career" pageName="Career" id="#job-details" />
+//       <div className="job-details-section pt-120 pb-120" id="job-details">
+//         <div className="container">
+//           <div className="row d-flex justify-content-center gy-5">
+//             <div className="col-lg-12">
+//               <div className="job-details-wrap">
+//                 <p>
+//                   Currently, there are no job openings available. However, if
+//                   you believe you possess the skills and expertise that align
+//                   with our team, we encourage you to share your resume. We will
+//                   review your qualifications and get in touch with you when a
+//                   suitable position becomes available.
+//                 </p>
+//               </div>
+//             </div>
+//             <div className="col-lg-12">
+//               <div className="apply-form">
+//                 <div className="apply-form-title">
+//                   <h4>Apply for a Position:</h4>
+//                   <p>Please complete the form below to share your details:</p>
+//                 </div>
+//                 <form onSubmit={handleSubmit}>
+//                   <div className="row g-4">
+//                     <div className="col-lg-6">
+//                       <div className="form-inner">
+//                         <input
+//                           type="text"
+//                           name="name"
+//                           placeholder="Your Name:"
+//                           value={formData.name}
+//                           onChange={handleChange}
+//                           required
+//                         />
+//                       </div>
+//                     </div>
+//                     <div className="col-lg-6">
+//                       <div className="form-inner">
+//                         <input
+//                           type="text"
+//                           name="phone"
+//                           placeholder="Phone Number:"
+//                           value={formData.phone}
+//                           onChange={handleChange}
+//                           required
+//                         />
+//                       </div>
+//                     </div>
+//                     <div className="col-lg-12">
+//                       <div className="form-inner">
+//                         <input
+//                           type="text"
+//                           name="email"
+//                           placeholder="Your Email:"
+//                           value={formData.email}
+//                           onChange={handleChange}
+//                           required
+//                         />
+//                       </div>
+//                     </div>
+//                     <div className="col-lg-12">
+//                       <div className="form-inner">
+//                         <input
+//                           type="text"
+//                           name="position"
+//                           placeholder="Position Applied For:"
+//                           value={formData.position}
+//                           onChange={handleChange}
+//                           required
+//                         />
+//                       </div>
+//                     </div>
+//                     <div className="col-lg-12">
+//                       <div className="form-inner">
+//                         <input
+//                           type="text"
+//                           name="experience"
+//                           placeholder="Experience:"
+//                           value={formData.experience}
+//                           onChange={handleChange}
+//                         />
+//                       </div>
+//                     </div>
+//                     <div className="col-lg-12">
+//                       <div className="form-inner">
+//                         <textarea
+//                           name="coverLetter"
+//                           cols={30}
+//                           rows={6}
+//                           placeholder="Cover Letter:"
+//                           value={formData.coverLetter}
+//                           onChange={handleChange}
+//                         />
+//                       </div>
+//                       <div className="col-lg-12">
+//                       <div className="form-inner">
+//                         <input
+//                           type="file"
+//                           name="resume"
+//                           accept=".pdf,.doc,.docx"
+//                           // onChange={handleChange}
+//                           required
+//                         />
+//                       </div>
+//                     </div>
+//                     </div>
+//                     <div className="col-lg-12 text-center">
+//                       <input
+//                         type="submit"
+//                         value="Send Now"
+//                         className="eg-btn btn--submit"
+//                       />
+//                     </div>
+//                   </div>
+//                 </form>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <JoinOurTeam btnclass="btn--primary" />
+//     </Layout>
+//   );
+// }
+
+// export default JobDetails;
+
+
+
+
+import React, { useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import JoinOurTeam from "../components/common/JoinOurTeam";
 import Layout from "../components/layout/index";
 
 function JobDetails() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    position: "",
+    experience: "",
+    coverLetter: "",
+    email: "",
+  });
+  const [resume, setResume] = useState(null); // State to hold the file
+
+  const handleChange = (e) => {
+    const { name, value, type, files } = e.target;
+    if (type === 'file') {
+      setResume(files[0]); // Set the selected file
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(); // Create FormData object
+
+    // Append text data
+    Object.keys(formData).forEach(key => {
+      data.append(key, formData[key]);
+    });
+
+    // Append the resume file
+    if (resume) {
+      data.append("resume", resume);
+    }
+
+    try {
+      const response = await fetch("/api/send-mail", {
+        method: "POST",
+        body: data, // Use FormData directly
+      });
+
+      if (response.ok) {
+        alert("Application submitted successfully!");
+        setFormData({
+          name: "",
+          phone: "",
+          position: "",
+          experience: "",
+          coverLetter: "",
+          email: "",
+        });
+        setResume(null); // Reset file input
+      } else {
+        alert("Error submitting application. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error submitting application. Please try again.");
+    }
+  };
+
   return (
-    <>
-      <Layout>
-        <Breadcrumb pageTitle="Career" pageName="Career" id="#job-details" />
-        <div className="job-details-section pt-120 pb-120" id="job-details">
-          <div className="container">
-            <div className="row d-flex justify-content-center gy-5">
-              <div className="col-lg-6">
-                <div className="job-details-wrap">
-                  <h3>Job Description</h3>
-                  <p className="para mb-4">
-                    We are looking for a highly skilled and motivated individual
-                    to join our team. The successful candidate will be
-                    responsible for contributing to various projects, working in
-                    a collaborative environment, and bringing innovative
-                    solutions to the table.
-                  </p>
-                  <h4>Job brief :</h4>
-                  <p className="para">
-                    As a team member, you will work closely with other
-                    professionals to deliver high-quality results. You will be
-                    involved in all phases of the project, from concept to
-                    execution, ensuring that the final product meets both client
-                    and company standards.
-                  </p>
-                  <p className="para mb-4">
-                    Responsibilities include working on multiple projects,
-                    collaborating with cross-functional teams, and adapting to
-                    fast-paced changes in a dynamic work environment.
-                  </p>
-                  <h4>Responsibilities :</h4>
-                  <ul className="about-list">
-                    <li>
-                      Collaborate with team members to ensure timely project
-                      delivery
-                    </li>
-                    <li>Develop and implement project strategies</li>
-                    <li>
-                      Maintain high-quality work standards and attention to
-                      detail
-                    </li>
-                    <li>
-                      Manage client expectations and ensure customer
-                      satisfaction
-                    </li>
-                  </ul>
-                  <h4>Required Skills :</h4>
-                  <p className="para">
-                    Excellent communication, problem-solving, and time
-                    management skills. Familiarity with project management tools
-                    and software is a plus.
-                  </p>
-                  <h4>Salary :</h4>
-                  <p className="para">Competitive and based on experience</p>
-                  <h4>Job Type :</h4>
-                  <p className="para">Full-Time/ Part-Time/ Remote</p>
-                  <h4>Location :</h4>
-                  <p className="para">Defence Avenue Mall, DHA 1, Islamabad</p>
-                </div>
+    <Layout>
+      <Breadcrumb pageTitle="Career" pageName="Career" id="#job-details" />
+      <div className="job-details-section pt-120 pb-120" id="job-details">
+        <div className="container">
+          <div className="row d-flex justify-content-center gy-5">
+            <div className="col-lg-12">
+              <div className="job-details-wrap">
+                <p>
+                  Currently, there are no job openings available. However, if
+                  you believe you possess the skills and expertise that align
+                  with our team, we encourage you to share your resume. We will
+                  review your qualifications and get in touch with you when a
+                  suitable position becomes available.
+                </p>
               </div>
-              <div className="col-lg-6">
-                <div className="apply-form">
-                  <div className="apply-form-title">
-                    <h4>Apply for a Position:</h4>
-                    <p>
-                      Please complete the form below to apply for a position:
-                    </p>
-                  </div>
-                  <form>
-                    <div className="row g-4">
-                      <div className="col-lg-6">
-                        <div className="form-inner">
-                          <input
-                            type="text"
-                            name="fname"
-                            placeholder="Your Name:"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="form-inner">
-                          <input
-                            type="text"
-                            name="phone"
-                            placeholder="Phone Number:"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-inner">
-                          <input
-                            type="text"
-                            name="position"
-                            placeholder="Applying for Position:"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-inner">
-                          <input
-                            type="text"
-                            name="experience"
-                            placeholder="Experience:"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-inner">
-                          <textarea
-                            name="coverLetter"
-                            cols={30}
-                            rows={6}
-                            placeholder="Cover Letter:"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="form-inner">
-                          <label htmlFor="cv" className="mb-3">
-                            Upload Resume:
-                          </label>
-                          <input type="file" name="resume" />
-                        </div>
-                      </div>
-                      <div className="col-lg-12 text-center">
+            </div>
+            <div className="col-lg-12">
+              <div className="apply-form">
+                <div className="apply-form-title">
+                  <h4>Apply for a Position:</h4>
+                  <p>Please complete the form below to share your details:</p>
+                </div>
+                <form onSubmit={handleSubmit}>
+                  <div className="row g-4">
+                    <div className="col-lg-6">
+                      <div className="form-inner">
                         <input
-                          type="submit"
-                          value="Send Now"
-                          className="eg-btn btn--submit"
+                          type="text"
+                          name="name"
+                          placeholder="Your Name:"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
                         />
                       </div>
                     </div>
-                  </form>
-                </div>
+                    <div className="col-lg-6">
+                      <div className="form-inner">
+                        <input
+                          type="text"
+                          name="phone"
+                          placeholder="Phone Number:"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-inner">
+                        <input
+                          type="text"
+                          name="email"
+                          placeholder="Your Email:"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-inner">
+                        <input
+                          type="text"
+                          name="position"
+                          placeholder="Position Applied For:"
+                          value={formData.position}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-inner">
+                        <input
+                          type="text"
+                          name="experience"
+                          placeholder="Experience:"
+                          value={formData.experience}
+                          onChange={handleChange}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-inner">
+                        <textarea
+                          name="coverLetter"
+                          cols={30}
+                          rows={6}
+                          placeholder="Cover Letter:"
+                          value={formData.coverLetter}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="col-lg-12">
+                        <div className="form-inner">
+                          <input
+                            type="file"
+                            name="resume"
+                            accept=".pdf,.doc,.docx"
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-12 text-center">
+                      <input
+                        type="submit"
+                        value="Send Now"
+                        className="eg-btn btn--submit"
+                      />
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <JoinOurTeam btnclass="btn--primary" />
-      </Layout>
-    </>
+      </div>
+      <JoinOurTeam btnclass="btn--primary" />
+    </Layout>
   );
 }
 

@@ -121,7 +121,7 @@ function Header3() {
                 </div>
                 <ul className="address-list">
                   <li>
-                    <span>Address:</span>Defence Avenue Mall, DHA 1, Islamabad
+                    <span>Address:</span> Defence Avenue Mall, DHA 1, Islamabad
                   </li>
                   <li>
                     <span>Phone:</span> +92 314 9709315
@@ -138,25 +138,15 @@ function Header3() {
                 <h5 className="blog-widget-title mb-1">Follow Us</h5>
                 <p className="para">Follow us on Social Network</p>
                 <div className="blog-widget-body">
-                  <ul className="follow-list d-flex flex-row align-items-start gap-4">
+                  <ul className="follow-list d-flex flex-row align-items-start justify-content-center gap-4">
                     <li>
-                      <a href="https://www.facebook.com/">
-                        <i className="bx bxl-facebook" />
+                      <a href="https://www.linkedin.com/codeertz">
+                        <i className="bx bxl-linkedin" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com/">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/">
+                      <a href="https://www.instagram.com/coddertz">
                         <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pinterest.com/">
-                        <i className="bx bxl-pinterest" />
                       </a>
                     </li>
                   </ul>
@@ -255,11 +245,11 @@ function Header3() {
                     <a>Team</a>
                   </Link>
                 </li> */}
-                <li>
+                {/* <li>
                   <Link href="job-list">
                     <a>Job List</a>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href="/job-details">
                     <a>Career</a>

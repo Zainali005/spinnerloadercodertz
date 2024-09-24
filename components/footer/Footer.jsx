@@ -21,14 +21,14 @@ function Footer({ footerStyle, footerImage }) {
       );
 
       if (response.ok) {
-        setMessage("Thank you for subscribing!"); 
-        setEmail(""); 
+        setMessage("Thank you for subscribing!");
+        setEmail("");
       } else {
-        setMessage("Something went wrong. Please try again."); 
+        setMessage("Something went wrong. Please try again.");
       }
     } catch (error) {
       console.error("Error submitting the form:", error);
-      setMessage("Something went wrong. Please try again."); 
+      setMessage("Something went wrong. Please try again.");
     }
   };
 
@@ -66,7 +66,7 @@ function Footer({ footerStyle, footerImage }) {
                         />
                       </button>
                     </div>
-                    {message && <p>{message}</p>} 
+                    {message && <p>{message}</p>}
                   </form>
                 </div>
               </div>
@@ -116,9 +116,6 @@ function Footer({ footerStyle, footerImage }) {
                     </li>
                     <li>
                       <Link href="/job-details">Career</Link>
-                    </li>
-                    <li>
-                      <Link href="/team">Team</Link>
                     </li>
                   </ul>
                 </div>
