@@ -1050,7 +1050,7 @@ i.bx {
   max-width: 140px;
   height: 100%;
   max-height: 140px;
-  border: 0px solid #06093B;
+  border: 0px solid #06093b;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1060,15 +1060,15 @@ i.bx {
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
 .home1preloader .egns-preloader .circle-border svg {
-  fill: #06093B;
+  fill: #06093b;
 }
 .home1preloader .egns-preloader .circle-border svg path {
-  stroke: #06093B;
+  stroke: #06093b;
 }
 .home1preloader .egns-preloader .circle-border .moving-circle {
   width: 10px;
   height: 10px;
-  background: #06093B;
+  background: #06093b;
   border-radius: 50%;
   position: absolute;
   top: 0;
