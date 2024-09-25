@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import Breadcrumb from "../components/common/Breadcrumb";
 import JoinOurTeam from "../components/common/JoinOurTeam";
 import Layout from "../components/layout/index";
@@ -13,6 +14,7 @@ function JobDetails() {
     coverLetter: "",
   });
   const [resume, setResume] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
@@ -35,6 +37,8 @@ function JobDetails() {
       data.append("resume", resume);
     }
 
+    setLoading(true);
+
     try {
       const response = await fetch("/api/send-mail", {
         method: "POST",
@@ -42,7 +46,7 @@ function JobDetails() {
       });
 
       if (response.ok) {
-        alert("Application submitted successfully!");
+        toast.success("Application submitted successfully!");
         setFormData({
           name: "",
           phone: "",
@@ -53,11 +57,13 @@ function JobDetails() {
         });
         setResume(null);
       } else {
-        alert("Error submitting application. Please try again.");
+        toast.error("Error submitting application. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Error submitting application. Please try again.");
+      toast.error("Error submitting application. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -171,8 +177,11 @@ function JobDetails() {
                     <div className="col-lg-12 text-center">
                       <input
                         type="submit"
-                        value="Send Now"
-                        className="eg-btn btn--submit"
+                        value={loading ? "Sending..." : "Send Now"}
+                        className={`eg-btn btn--submit ${
+                          loading ? "loading" : ""
+                        }`}
+                        disabled={loading}
                       />
                     </div>
                   </div>
@@ -181,6 +190,7 @@ function JobDetails() {
             </div>
           </div>
         </div>
+        <Toaster />
       </div>
       <JoinOurTeam btnclass="btn--primary" />
     </Layout>

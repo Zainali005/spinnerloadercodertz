@@ -3,13 +3,13 @@ import { IncomingForm } from "formidable";
 
 export const config = {
   api: {
-    bodyParser: false, 
+    bodyParser: false,
   },
 };
 
 const handler = async (req, res) => {
   if (req.method === "POST") {
-    const form = new IncomingForm(); 
+    const form = new IncomingForm();
 
     form.parse(req, async (err, fields, files) => {
       if (err) {
@@ -19,8 +19,6 @@ const handler = async (req, res) => {
 
       const { name, phone, email, position, experience, coverLetter } = fields;
       const resumeFile = files.resume;
-
-      // Check if essential fields are present
       if (!name || !email) {
         return res.status(400).json({ error: "Name and Email are required" });
       }
@@ -52,7 +50,7 @@ const handler = async (req, res) => {
         from: process.env.EMAIL_USER,
         to: email,
         subject: "Application Received",
-        text: `Hi ${name},\n\nThank you for your application for the position of ${position}. We will get back to you shortly.\n\nBest Regards,\nYour Company Name`,
+        text: `Hi ${name},\n\nThank you for your application for the position of ${position}. We will get back to you shortly.\n\nBest Regards,\nCodeErtz`,
       };
 
       try {
