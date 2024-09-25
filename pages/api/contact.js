@@ -1,5 +1,3 @@
-// pages/api/send-email.js
-
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
@@ -13,8 +11,6 @@ export default async function handler(req, res) {
         pass: process.env.EMAIL_PASS, 
       },
     });
-
-    // Set up email data
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER, 
@@ -23,7 +19,7 @@ export default async function handler(req, res) {
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
-        Subject:${subject}
+        Subject: ${subject}
         Message: ${message}
       `,
     };
