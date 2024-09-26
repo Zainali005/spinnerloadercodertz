@@ -78,7 +78,7 @@ const handler = async (req, res) => {
         from: process.env.EMAIL_USER,
         to: adminEmail,
         subject: "New Job Application",
-        text: `You have received a new job application from ${name}.\n\nDetails:\nName: ${name}\nPhone: ${phone}\nPosition: ${position}\nExperience: ${experience}\nCover Letter: ${coverletter}\nEmail: ${email}`,
+        text: `You have received a new job application from ${name}.\n\nDetails:\nName: ${name}\nPhone: ${phone}\nPosition: ${position}\nExperience: ${experience}\nEmail: ${email}`,
         attachments: [
           {
             filename: resumeFile.originalFilename,
