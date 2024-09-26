@@ -69,7 +69,7 @@ const handler = async (req, res) => {
         },
       });
 
-      const adminEmail = "zainali5002@gmail.com";
+      const adminEmail = process.env.ADMIN_EMAIL;
 
       // Extract fields from the parsed form
       const { name, phone, position, experience, coverletter, email } = fields;
