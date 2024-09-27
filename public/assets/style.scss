@@ -5888,8 +5888,8 @@ header.style-4 {
     margin-bottom: 40px;
   }
   &.style-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("../assets/images/bg/about3-bg.png");
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    //   url("../assets/images/bg/about3-bg.png");
     max-width: unset;
     @include lg-device() {
       height: 450px;
@@ -8343,6 +8343,8 @@ inner-banner-section
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/images/bg/inner-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   @include xl-device() {
     min-height: 420px;
   }

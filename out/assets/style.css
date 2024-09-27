@@ -2027,7 +2027,7 @@ header.style-1 .main-nav ul li {
 }
 header.style-1 .main-nav ul li a {
   font-size: 16px;
-  color: #fff;
+  color: black;
   font-weight: 500;
   display: block;
   text-transform: capitalize;
@@ -2084,7 +2084,7 @@ header.style-1 .main-nav ul li ul.sub-menu > li i {
 header.style-1 .main-nav ul li ul.sub-menu > li a {
   display: block;
   padding: 15px 15px;
-  color: #fff;
+  color: black;
   font-weight: 300;
   text-transform: capitalize;
   font-size: 15px;
@@ -6133,8 +6133,8 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu > li a.active {
   }
 }
 .company-vdo.style-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../assets/images/bg/about3-bg.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/images/bg/about3-bg.png"); */
   max-width: unset;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -8510,6 +8510,8 @@ inner-banner-section
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/images/bg/inner-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .inner-banner {
@@ -9955,4 +9957,29 @@ ul.blog-details-list li::after {
 }
 .closeBtnMobile {
   cursor: pointer;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06093b; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a1f4d; 
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #06093b #f1f1f1; 
 }

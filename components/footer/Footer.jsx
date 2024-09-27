@@ -153,19 +153,8 @@ function Footer({ footerStyle, footerImage }) {
                       <a href="tel:+923149709315">+92 314 9709315</a>
                     </li>
                     <li>
-                      <svg
-                        width={18}
-                        height={18}
-                        viewBox="0 0 18 18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M2.44818 0C1.33262 0 0.5 0.832621 0.5 1.94818V16.0518C0.5 17.1674 1.33262 18 2.44818 18H15.5518C16.6674 18 17.5 17.1674 17.5 16.0518V1.94818C17.5 0.832621 16.6674 0 15.5518 0H2.44818ZM2.5 1.94818C2.5 1.7544 2.67358 1.59056 2.85938 1.59056H15.1406C15.3264 1.59056 15.5 1.7544 15.5 1.94818V16.0518C15.5 16.2456 15.3264 16.4094 15.1406 16.4094H2.85938C2.67358 16.4094 2.5 16.2456 2.5 16.0518V1.94818Z"
-                        />
-                      </svg>
-                      <a href="mailto:info@company.com">info@company.com</a>
+                     <img src="/assets/images/bg/mail.svg" alt="mail" height={18} width={18} style={{color:"#49D0C4"}}/>
+                      <a href="mailto:info@codeertz.com">info@codeertz.com</a>
                     </li>
                   </ul>
                 </div>
@@ -178,7 +167,7 @@ function Footer({ footerStyle, footerImage }) {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <p>
-                  &copy; {new Date().getFullYear()} Your Company. All rights
+                  &copy; {new Date().getFullYear()} CodeErtz. All rights
                   reserved.
                 </p>
               </div>

@@ -4,11 +4,11 @@ function Breadcrumb({ pageName, pageTitle, id }) {
   return (
     <>
       <div className="inner-banner">
-        <img
+        {/* <img
           src="/assets/images/bg/inner-bannerdot.png"
           className="inner-bannerdot"
           alt="image"
-        />
+        /> */}
         <img
           src="assets/images/bg/inner-bannerwave.png"
           className="inner-bannerwave"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useReducer, useState } from "react";
+
 /*---------Using reducer mange the active or inactive menu----------*/
 const initialState = { activeMenu: "" };
 
@@ -26,6 +27,11 @@ function reducer(state, action) {
 }
 function Header3() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   // Sticky Menu Area
   useEffect(() => {
@@ -220,39 +226,26 @@ function Header3() {
                 <a>Home</a>
               </Link>
             </li>
-            <li
-              className="menu-item-has-children"
-              onClick={() => dispatch({ type: "pages" })}
-            >
+            <li className="menu-item-has-children" onClick={toggleDropdown}>
               <Link href="#" className="drop-down">
-                <a>Pages</a>
+                About
               </Link>
               <i className="bi bi-chevron-down dropdown-icon" />
               <ul
-                className={
-                  state.activeMenu === "pages"
-                    ? "sub-menu d-block"
-                    : "sub-menu d-none"
-                }
+                className={`sub-menu ${isOpen ? "d-block" : "d-none"}`}
+                style={{ backgroundColor: "white" }}
               >
                 <li>
-                  <Link href="/about">
-                    <a>About</a>
+                  <Link href="/about" onClick={(e) => e.stopPropagation()}>
+                    About
                   </Link>
                 </li>
-                {/* <li>
-                  <Link href="/team">
-                    <a>Team</a>
-                  </Link>
-                </li> */}
-                {/* <li>
-                  <Link href="job-list">
-                    <a>Job List</a>
-                  </Link>
-                </li> */}
                 <li>
-                  <Link href="/job-details">
-                    <a>Career</a>
+                  <Link
+                    href="/job-details"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Career
                   </Link>
                 </li>
               </ul>
@@ -326,7 +319,7 @@ function Header3() {
           </div>
           <div className="eg-btn btn--primary3 header-btn">
             <Link href="/contact">
-              <a>LET S TALK</a>
+              <a>LET&#39;S TALK</a>
             </Link>
           </div>
         </div>

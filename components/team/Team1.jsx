@@ -50,7 +50,7 @@ function Team1() {
                 </div>
                 <div className="team-content">
                   <h4 className="name">Usama Farooq</h4>
-                  <p className="designation">CEO/Founder</p>
+                  <p className="designation">CEO</p>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ function Team1() {
                 </div>
                 <div className="team-content">
                   <h4 className="name">Usama Faisal</h4>
-                  <p className="designation">CEO</p>
+                  <p className="designation">CTO</p>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ function Team1() {
                 </div>
                 <div className="team-content">
                   <h4 className="name">Zulqarnain bukhari</h4>
-                  <p className="designation">CEO</p>
+                  <p className="designation">COO</p>
                 </div>
               </div>
             </div>

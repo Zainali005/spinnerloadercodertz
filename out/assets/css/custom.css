@@ -1,0 +1,17 @@
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .sub-menu.d-block {
+    max-height: 200px; /* Set a max-height that accommodates your content */
+    opacity: 1;
+  }
+  
+  .sub-menu.d-none {
+    max-height: 0; /* Collapsed state */
+    opacity: 0;
+  }
+  

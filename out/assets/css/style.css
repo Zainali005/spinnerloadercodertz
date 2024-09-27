@@ -1632,7 +1632,7 @@ header.style-1 .main-nav ul li ul.sub-menu > li i {
 header.style-1 .main-nav ul li ul.sub-menu > li a {
   display: block;
   padding: 15px 15px;
-  color: #fff;
+  color: black;
   font-weight: 300;
   text-transform: capitalize;
   font-size: 15px;
