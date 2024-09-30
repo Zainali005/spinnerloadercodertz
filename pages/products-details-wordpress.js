@@ -6,7 +6,7 @@ import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 import Services from "../components/Services/Services.tsx";
 
-function serviceDetailsProduct() {
+function ServiceDetailsProduct() {
  
   const [activeTab, setActiveTab] = useState("");
 
@@ -200,4 +200,4 @@ function serviceDetailsProduct() {
   );
 }
 
-export default serviceDetailsProduct;
+export default ServiceDetailsProduct;

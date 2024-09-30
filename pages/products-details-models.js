@@ -5,7 +5,7 @@ import JoinOurTeam from "../components/common/JoinOurTeam";
 import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 
-function serviceDetailsProduct() {
+function ServiceDetailsProduct() {
   const [activeTab, setActiveTab] = useState("");
 
   const handleTabClick = (tab) => {
@@ -263,4 +263,4 @@ function serviceDetailsProduct() {
   );
 }
 
-export default serviceDetailsProduct;
+export default ServiceDetailsProduct;
