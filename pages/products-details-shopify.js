@@ -1,11 +1,16 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import JoinOurTeam from "../components/common/JoinOurTeam";
 import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 
 function serviceDetailsProduct() {
+  const [activeTab, setActiveTab] = useState("");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <>
       <Layout>
@@ -17,6 +22,73 @@ function serviceDetailsProduct() {
         <div className="service-details pt-120 pb-120" id="service-details">
           <div className="container">
             <div className="row justify-content-center g-4">
+              <div className="col-lg-4">
+                <div className="service-sidebar">
+                  <div className="service-widget service-list-area">
+                    <h4 className="sidebar-title">All Services</h4>
+                    <ul className="service-list">
+                      {[
+                        {
+                          name: "Product Development",
+                          href: "/products-details-product",
+                        },
+                        {
+                          name: "Website Development",
+                          href: "/products-details-website",
+                        },
+                        {
+                          name: "iOS/Android App Development",
+                          href: "/products-details-app",
+                        },
+                        { name: "ML Models", href: "/products-details-models" },
+                        {
+                          name: "LLM Chatbots",
+                          href: "/products-details-chatbots",
+                        },
+                        { name: "DevOps", href: "/products-details-devOps" },
+                        { name: "UI/UX", href: "/products-details-ui" },
+                        {
+                          name: "WordPress",
+                          href: "/products-details-wordpress",
+                        },
+                        { name: "Magento", href: "/products-details-magento" },
+                        {
+                          name: "Shopify/WooCommerce",
+                          href: "/products-details-shopify",
+                        },
+                      ].map((service) => (
+                        <li key={service.name}>
+                          <Link href={service.href}>
+                            <a
+                              onClick={() => handleTabClick(service.name)}
+                              style={{
+                                color:
+                                  activeTab === service.name
+                                    ? "#06093B"
+                                    : "#49D0C4",
+                                fontWeight:
+                                  activeTab === service.name
+                                    ? "bold"
+                                    : "normal",
+                              }}
+                            >
+                              {service.name}
+                            </a>
+                          </Link>
+                          <svg
+                            width={20}
+                            height={16}
+                            viewBox="0 0 20 16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M12.7496 15.4594C12.4954 15.4594 ..." />
+                          </svg>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div className="col-lg-8">
                 <div className="service-details-area">
                   <img

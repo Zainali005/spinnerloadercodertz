@@ -1,11 +1,18 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import JoinOurTeam from "../components/common/JoinOurTeam";
 import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
+import Services from "../components/Services/Services.tsx";
 
 function serviceDetailsProduct() {
+ 
+  const [activeTab, setActiveTab] = useState("");
+
+  const handleTabClick = (tab) => {
+      setActiveTab(tab);
+  };
   return (
     <>
       <Layout>
@@ -17,6 +24,9 @@ function serviceDetailsProduct() {
         <div className="service-details pt-120 pb-120" id="service-details">
           <div className="container">
             <div className="row justify-content-center g-4">
+              <div className="col-lg-4">
+          <Services activeTab={activeTab} onTabClick={handleTabClick}/>
+              </div>
               <div className="col-lg-8">
                 <div className="service-details-area">
                   <img

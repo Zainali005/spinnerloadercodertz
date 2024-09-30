@@ -75,22 +75,22 @@ function Footer({ footerStyle, footerImage }) {
                   <h5>Our Services</h5>
                   <ul className="footer-list">
                     <li>
-                      <Link href="/service">Product Development</Link>
+                      <Link href="/products-details-product">Product Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">Website Development</Link>
+                      <Link href="/products-details-website">Website Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">iOS/Android App Development</Link>
+                      <Link href="/products-details-app">iOS/Android App Development</Link>
                     </li>
                     <li>
-                      <Link href="/service">ML Models</Link>
+                      <Link href="/products-details-models">ML Models</Link>
                     </li>
                     <li>
-                      <Link href="/service">LLM Chatbots</Link>
+                      <Link href="/products-details-chatbots">LLM Chatbots</Link>
                     </li>
                     <li>
-                      <Link href="/service">DevOps</Link>
+                      <Link href="/products-details-devOps">DevOps</Link>
                     </li>
                     <li>
                       <Link href="/service">See more...</Link>
