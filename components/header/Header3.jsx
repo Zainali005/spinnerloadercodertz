@@ -227,10 +227,10 @@ function Header3() {
               </Link>
             </li>
             <li className="menu-item-has-children" onClick={toggleDropdown}>
-              <Link href="#" className="drop-down">
+              <Link href="/about" className="drop-down">
                 About
               </Link>
-              <i className="bi bi-chevron-down dropdown-icon" />
+              {/* <i className="bi bi-chevron-down dropdown-icon" />
               <ul
                 className={`sub-menu ${isOpen ? "d-block" : "d-none"}`}
                 style={{ backgroundColor: "white" }}
@@ -248,7 +248,7 @@ function Header3() {
                     Career
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li
               className="menu-item-has-children"

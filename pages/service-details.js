@@ -153,7 +153,6 @@ function serviceDetails() {
                     </ul>
                   </div>
                   <div className="service-widget service-banner">
-                    <span>Offer Banner</span>
                     <h3>Do You Have a Project In Your Mind </h3>
                     <Link href="/contact">
                       <a className="eg-btn btn--primary btn--lg">

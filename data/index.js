@@ -382,40 +382,47 @@ export const chooseUsdata = [
   {
     id: 1,
     itemNumber: "01",
-    title: "Free Icon Plugin",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Comprehensive Support",
+    description:
+      "We offer 24/7 customer support to assist you whenever you need it.",
   },
   {
     id: 2,
     itemNumber: "02",
-    title: "Free 6 Month Support",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Expert Team",
+    description:
+      "Our team consists of industry experts with years of experience to guide you.",
   },
   {
     id: 3,
     itemNumber: "03",
-    title: "Customer Strategy",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Cutting-Edge Technology",
+    description:
+      "We utilize the latest technology to ensure the best performance and security.",
   },
   {
     id: 4,
     itemNumber: "04",
-    title: "Customer Strategy",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Tailored Solutions",
+    description:
+      "We provide customized solutions that meet the unique needs of your business.",
   },
   {
     id: 5,
     itemNumber: "05",
-    title: "Most Advanced Features",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Affordable Pricing",
+    description:
+      "Our competitive pricing ensures that you get the best value for your investment.",
   },
   {
     id: 6,
     itemNumber: "06",
-    title: "Very Reasonable Price",
-    description: "Nullam ullamcorper condimentum urna eu accumsan.",
+    title: "Proven Track Record",
+    description:
+      "We have a history of satisfied customers and successful projects.",
   },
 ];
+
 export const teamData = [
   {
     id: 1,

@@ -16,7 +16,7 @@ function JoinOurTeam({ btnclass }) {
                 <h2>Were Always Looking For Talented People Our Agency.</h2>
               </div>
               <div className="col-lg-5 d-flex justify-content-lg-end justify-content-center">
-                <Link href="/contact">
+                <Link href="/job-details">
                   <a
                     className={`${"eg-btn capsule joinus-btn"} ${btnclass}`}
                     style={{ cursor: "pointer" }}
