@@ -1,6 +1,28 @@
 import nodemailer from 'nodemailer';
+import cors from 'cors';
+
+const corsMiddleware = cors({
+  methods: ['POST'],
+  origin: process.env.CORS_ORIGIN || '*', 
+});
+
+
+function runMiddleware(req, res, fn) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result) => {
+      if (result instanceof Error) {
+        return reject(result);
+      }
+      return resolve(result);
+    });
+  });
+}
 
 export default async function handler(req, res) {
+
+  await runMiddleware(req, res, corsMiddleware);
+
+
   if (req.method === 'POST') {
     const { name, email, phone, subject, message } = req.body;
 
