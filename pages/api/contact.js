@@ -6,6 +6,9 @@ const corsMiddleware = cors({
   origin: process.env.CORS_ORIGIN || '*', 
 });
 
+console.log(corsMiddleware, 'cors middle');
+
+
 
 function runMiddleware(req, res, fn) {
   return new Promise((resolve, reject) => {
