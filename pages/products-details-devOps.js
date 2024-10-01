@@ -6,11 +6,12 @@ import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 
 function ServiceDetailsProduct() {
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("DevOps"); // Set a default active tab
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
   return (
     <>
       <Layout>
@@ -22,54 +23,30 @@ function ServiceDetailsProduct() {
         <div className="service-details pt-120 pb-120" id="service-details">
           <div className="container">
             <div className="row justify-content-center g-4">
-            <div className="col-lg-4">
+              <div className="col-lg-4">
                 <div className="service-sidebar">
                   <div className="service-widget service-list-area">
                     <h4 className="sidebar-title">All Services</h4>
                     <ul className="service-list">
                       {[
-                        {
-                          name: "Product Development",
-                          href: "/products-details-product",
-                        },
-                        {
-                          name: "Website Development",
-                          href: "/products-details-website",
-                        },
-                        {
-                          name: "iOS/Android App Development",
-                          href: "/products-details-app",
-                        },
+                        { name: "Product Development", href: "/products-details-product" },
+                        { name: "Website Development", href: "/products-details-website" },
+                        { name: "iOS/Android App Development", href: "/products-details-app" },
                         { name: "ML Models", href: "/products-details-models" },
-                        {
-                          name: "LLM Chatbots",
-                          href: "/products-details-chatbots",
-                        },
+                        { name: "LLM Chatbots", href: "/products-details-chatbots" },
                         { name: "DevOps", href: "/products-details-devOps" },
                         { name: "UI/UX", href: "/products-details-ui" },
-                        {
-                          name: "WordPress",
-                          href: "/products-details-wordpress",
-                        },
+                        { name: "WordPress", href: "/products-details-wordpress" },
                         { name: "Magento", href: "/products-details-magento" },
-                        {
-                          name: "Shopify/WooCommerce",
-                          href: "/products-details-shopify",
-                        },
+                        { name: "Shopify/WooCommerce", href: "/products-details-shopify" },
                       ].map((service) => (
                         <li key={service.name}>
                           <Link href={service.href}>
                             <a
                               onClick={() => handleTabClick(service.name)}
                               style={{
-                                color:
-                                  activeTab === service.name
-                                    ? "#06093B"
-                                    : "#49D0C4",
-                                fontWeight:
-                                  activeTab === service.name
-                                    ? "bold"
-                                    : "normal",
+                                color: activeTab === service.name ? "#06093B" : "#49D0C4",
+                                fontWeight: activeTab === service.name ? "bold" : "normal",
                               }}
                             >
                               {service.name}
@@ -99,7 +76,7 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive DevOps Services</h3>
                   <p className="para">
                     Our team offers a wide range of DevOps services designed to
-                    meet the evolving needs of businesses in todays fast-paced
+                    meet the evolving needs of businesses in today's fast-paced
                     digital environment. From continuous integration and
                     delivery to infrastructure management and monitoring, we
                     provide solutions that drive efficiency and enhance
@@ -114,13 +91,13 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    youre 30 or above?
+                    you're 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to DevOps Implementation
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine a DevOps startup—well call it Beautify.
+                    Let's imagine a DevOps startup—we'll call it Beautify.
                     Beautify develops all-natural cosmetics and implements
                     DevOps practices for seamless software development and
                     operations. Some of the key team members behind this small
@@ -144,8 +121,7 @@ function ServiceDetailsProduct() {
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z"
-                            />
+                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z" />
                           </svg>
                           Analyzing research data and identifying.
                         </li>
@@ -160,8 +136,7 @@ function ServiceDetailsProduct() {
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z"
-                            />
+                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z" />
                           </svg>
                           Conducting usability testing sessions.
                         </li>
@@ -176,8 +151,7 @@ function ServiceDetailsProduct() {
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z"
-                            />
+                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z" />
                           </svg>
                           Amazing Timing and Experience.
                         </li>
@@ -192,8 +166,7 @@ function ServiceDetailsProduct() {
                             <path
                               fillRule="evenodd"
                               clipRule="evenodd"
-                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z"
-                            />
+                              d="M17.8217 1.32396V9.67604L22.5347 5.5L17.8217 1.32396ZM16.8316 0.671268C16.8316 0.0883502 17.5485 -0.216486 17.993 0.177416L24 5.5L17.993 10.8226C17.5485 11.2165 16.8316 10.9117 16.8316 10.3287V5.97853H0.49506C0.221646 5.97853 0 5.76429 0 5.5C0 5.23571 0.221646 5.02147 0.49506 5.02147H16.8316V0.671268Z" />
                           </svg>
                           Gathering user feedback through surveys.
                         </li>
@@ -208,9 +181,7 @@ function ServiceDetailsProduct() {
                     </div>
                   </div>
                   <div className="work-process-area">
-                    <h3 className="service-subtitle text-center">
-                      Work Process
-                    </h3>
+                    <h3 className="service-subtitle text-center">Work Process</h3>
                     <div className="row g-4">
                       <div className="col-md-3 col-sm-6">
                         <div className="work-process-item">

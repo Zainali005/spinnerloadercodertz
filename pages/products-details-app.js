@@ -6,11 +6,12 @@ import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 
 function ServiceDetailsProduct() {
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("iOS/Android App Development"); // Set default active tab
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
   return (
     <>
       <Layout>
@@ -22,7 +23,7 @@ function ServiceDetailsProduct() {
         <div className="service-details pt-120 pb-120" id="service-details">
           <div className="container">
             <div className="row justify-content-center g-4">
-            <div className="col-lg-4">
+              <div className="col-lg-4">
                 <div className="service-sidebar">
                   <div className="service-widget service-list-area">
                     <h4 className="sidebar-title">All Services</h4>
@@ -99,7 +100,7 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive App Development Services</h3>
                   <p className="para">
                     Our team offers a wide range of app development services
-                    designed to meet the evolving needs of businesses in todays
+                    designed to meet the evolving needs of businesses in today's
                     fast-paced digital environment. From concept development and
                     prototyping to production and market launch, we provide
                     solutions that drive growth and innovation.
@@ -113,13 +114,13 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    youre 30 or above?
+                    you're 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to App Development
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine an app startup—well call it Beautify. Beautify
+                    Let's imagine an app startup—we'll call it Beautify. Beautify
                     creates its own all-natural cosmetics and develops a mobile
                     app for market. Some of the key team members behind this
                     small but successful startup include a product manager, a UX

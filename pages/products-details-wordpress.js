@@ -8,7 +8,7 @@ import Services from "../components/Services/Services.tsx";
 
 function ServiceDetailsProduct() {
  
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("WordPress");
 
   const handleTabClick = (tab) => {
       setActiveTab(tab);

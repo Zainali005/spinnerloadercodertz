@@ -6,7 +6,7 @@ import OurPartner from "../components/common/OurPartner";
 import Layout from "../components/layout/index";
 
 function ServiceDetailsProduct() {
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("UI/UX");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
