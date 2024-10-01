@@ -100,10 +100,10 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive App Development Services</h3>
                   <p className="para">
                     Our team offers a wide range of app development services
-                    designed to meet the evolving needs of businesses in today's
-                    fast-paced digital environment. From concept development and
-                    prototyping to production and market launch, we provide
-                    solutions that drive growth and innovation.
+                    designed to meet the evolving needs of businesses in
+                    today&apos;s fast-paced digital environment. From concept
+                    development and prototyping to production and market launch,
+                    we provide solutions that drive growth and innovation.
                   </p>
                   <p className="para">
                     Whether you are looking to develop a new mobile app, enhance
@@ -114,18 +114,18 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    you're 30 or above?
+                    you&apos;re 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to App Development
                   </h3>
                   <p className="para mb-40">
-                    Let's imagine an app startup—we'll call it Beautify. Beautify
-                    creates its own all-natural cosmetics and develops a mobile
-                    app for market. Some of the key team members behind this
-                    small but successful startup include a product manager, a UX
-                    designer, a UI designer, an app developer, a data analyst,
-                    and a digital marketer.
+                    Let&apos;s imagine an app startup—we&apos;ll call it
+                    Beautify. Beautify creates its own all-natural cosmetics and
+                    develops a mobile app for market. Some of the key team
+                    members behind this small but successful startup include a
+                    product manager, a UX designer, a UI designer, an app
+                    developer, a data analyst, and a digital marketer.
                   </p>
 
                   <div className="row g-4">

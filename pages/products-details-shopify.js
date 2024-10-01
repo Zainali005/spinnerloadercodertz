@@ -99,9 +99,9 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive Shopify Services</h3>
                   <p className="para">
                     Our team offers a wide range of Shopify services designed to
-                    meet the evolving needs of businesses in todays fast-paced
-                    digital environment. From theme customization and app
-                    integration to website optimization and maintenance, we
+                    meet the evolving needs of businesses in today&apos;s
+                    fast-paced digital environment. From theme customization and
+                    app integration to website optimization and maintenance, we
                     provide solutions that enhance your online presence and
                     drive engagement.
                   </p>
@@ -114,19 +114,19 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    youre 30 or above?
+                    you&apos;re 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to Shopify Implementation
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine a Shopify startup—well call it Beautify.
-                    Beautify develops all-natural cosmetics and uses Shopify to
-                    create an engaging online store that focuses on user
-                    experience. Some of the key team members behind this small
-                    but successful startup include a product manager, a Shopify
-                    developer, a front-end developer, a data analyst, and a
-                    digital marketer.
+                    Let&apos;s imagine a Shopify startup—we&apos;ll call it
+                    Beautify. Beautify develops all-natural cosmetics and uses
+                    Shopify to create an engaging online store that focuses on
+                    user experience. Some of the key team members behind this
+                    small but successful startup include a product manager, a
+                    Shopify developer, a front-end developer, a data analyst,
+                    and a digital marketer.
                   </p>
 
                   <div className="row g-4">

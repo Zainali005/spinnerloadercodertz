@@ -99,10 +99,11 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive UI/UX Services</h3>
                   <p className="para">
                     Our team offers a wide range of UI/UX services designed to
-                    meet the evolving needs of businesses in todays fast-paced
-                    digital environment. From user research and wireframing to
-                    prototyping and usability testing, we provide solutions that
-                    enhance user satisfaction and drive engagement.
+                    meet the evolving needs of businesses in today&apos;s
+                    fast-paced digital environment. From user research and
+                    wireframing to prototyping and usability testing, we provide
+                    solutions that enhance user satisfaction and drive
+                    engagement.
                   </p>
                   <p className="para">
                     Whether you are looking to redesign your interface, improve
@@ -113,18 +114,19 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    youre 30 or above?
+                    you&apos;re 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to UI/UX Implementation
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine a UI/UX startup—well call it Beautify. Beautify
-                    develops all-natural cosmetics and focuses on creating
-                    exceptional user experiences through thoughtful design. Some
-                    of the key team members behind this small but successful
-                    startup include a product manager, a UI/UX designer, a
-                    front-end developer, a data analyst, and a digital marketer.
+                    Let&apos;s imagine a UI/UX startup—we&apos;ll call it
+                    Beautify. Beautify develops all-natural cosmetics and
+                    focuses on creating exceptional user experiences through
+                    thoughtful design. Some of the key team members behind this
+                    small but successful startup include a product manager, a
+                    UI/UX designer, a front-end developer, a data analyst, and a
+                    digital marketer.
                   </p>
 
                   <div className="row g-4">

@@ -99,10 +99,11 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive Web Development Services</h3>
                   <p className="para">
                     Our team offers a wide range of web development services
-                    designed to meet the evolving needs of businesses in today
-                    fast-paced digital environment. From front-end and back-end
-                    development to responsive design and deployment, we provide
-                    solutions that drive growth and innovation.
+                    designed to meet the evolving needs of businesses in
+                    today&apos;s fast-paced digital environment. From front-end
+                    and back-end development to responsive design and
+                    deployment, we provide solutions that drive growth and
+                    innovation.
                   </p>
                   <p className="para">
                     Whether you are looking to build a new website, enhance an
@@ -119,12 +120,12 @@ function ServiceDetailsProduct() {
                     From Concept to Web Development
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine a web startup—well call it Beautify. Beautify
-                    creates its own all-natural cosmetics and sells them through
-                    a custom-built website. Some of the key team members behind
-                    this small but successful startup include a project manager,
-                    a UX designer, a UI designer, a web developer, a data
-                    analyst, and a digital marketer.
+                    Let&apos;s imagine a web startup—we&apos;ll call it
+                    Beautify. Beautify creates its own all-natural cosmetics and
+                    sells them through a custom-built website. Some of the key
+                    team members behind this small but successful startup
+                    include a project manager, a UX designer, a UI designer, a
+                    web developer, a data analyst, and a digital marketer.
                   </p>
 
                   <div className="row g-4">

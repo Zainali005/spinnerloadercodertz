@@ -22,7 +22,7 @@ function ServiceDetailsProduct() {
         <div className="service-details pt-120 pb-120" id="service-details">
           <div className="container">
             <div className="row justify-content-center g-4">
-            <div className="col-lg-4">
+              <div className="col-lg-4">
                 <div className="service-sidebar">
                   <div className="service-widget service-list-area">
                     <h4 className="sidebar-title">All Services</h4>
@@ -102,7 +102,7 @@ function ServiceDetailsProduct() {
                   <p className="para">
                     Our team offers a wide range of ML model development
                     services designed to meet the evolving needs of businesses
-                    in todays fast-paced digital environment. From data
+                    in today&apos;s fast-paced digital environment. From data
                     collection and preprocessing to model training and
                     deployment, we provide solutions that drive growth and
                     innovation.
@@ -122,12 +122,12 @@ function ServiceDetailsProduct() {
                     From Idea to ML Model Development
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine an ML startup—well call it Beautify. Beautify
-                    creates its own all-natural cosmetics and develops ML models
-                    for market analysis. Some of the key team members behind
-                    this small but successful startup include a product manager,
-                    a data scientist, a machine learning engineer, a UX
-                    designer, and a digital marketer.
+                    Let&apos;s imagine an ML startup—we&apos;ll call it
+                    Beautify. Beautify creates its own all-natural cosmetics and
+                    develops ML models for market analysis. Some of the key team
+                    members behind this small but successful startup include a
+                    product manager, a data scientist, a machine learning
+                    engineer, a UX designer, and a digital marketer.
                   </p>
 
                   <div className="row g-4">

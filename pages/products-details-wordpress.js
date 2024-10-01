@@ -7,11 +7,10 @@ import Layout from "../components/layout/index";
 import Services from "../components/Services/Services.tsx";
 
 function ServiceDetailsProduct() {
- 
   const [activeTab, setActiveTab] = useState("WordPress");
 
   const handleTabClick = (tab) => {
-      setActiveTab(tab);
+    setActiveTab(tab);
   };
   return (
     <>
@@ -25,7 +24,7 @@ function ServiceDetailsProduct() {
           <div className="container">
             <div className="row justify-content-center g-4">
               <div className="col-lg-4">
-          <Services activeTab={activeTab} onTabClick={handleTabClick}/>
+                <Services activeTab={activeTab} onTabClick={handleTabClick} />
               </div>
               <div className="col-lg-8">
                 <div className="service-details-area">
@@ -37,7 +36,7 @@ function ServiceDetailsProduct() {
                   <h3>Explore Our Comprehensive WordPress Services</h3>
                   <p className="para">
                     Our team offers a wide range of WordPress services designed
-                    to meet the evolving needs of businesses in todays
+                    to meet the evolving needs of businesses in today&apos;s
                     fast-paced digital environment. From theme customization and
                     plugin development to website optimization and maintenance,
                     we provide solutions that enhance your online presence and
@@ -52,17 +51,17 @@ function ServiceDetailsProduct() {
                   <p className="para mb-30">
                     With this in mind, is there a place for older developers in
                     the workforce? Is it too late to change into this field once
-                    youre 30 or above?
+                    you&apos;re 30 or above?
                   </p>
                   <h3 className="service-subtitle">
                     From Idea to WordPress Implementation
                   </h3>
                   <p className="para mb-40">
-                    Lets imagine a WordPress startup—well call it Beautify.
-                    Beautify develops all-natural cosmetics and uses WordPress
-                    to create an engaging online store that focuses on user
-                    experience. Some of the key team members behind this small
-                    but successful startup include a product manager, a
+                    Let&apos;s imagine a WordPress startup—we&apos;ll call it
+                    Beautify. Beautify develops all-natural cosmetics and uses
+                    WordPress to create an engaging online store that focuses on
+                    user experience. Some of the key team members behind this
+                    small but successful startup include a product manager, a
                     WordPress developer, a front-end developer, a data analyst,
                     and a digital marketer.
                   </p>
