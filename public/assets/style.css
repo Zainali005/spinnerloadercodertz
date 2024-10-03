@@ -96,14 +96,14 @@ Template Name: Naftend
   /*color Variable*/
   --primary-color1: #49d0c4;
   --primary-opcaity: rgba(230, 0, 76, 0.1);
-  --primary-color2: #06093B;
+  --primary-color2: #06093b;
   --primary-opcaity2: rgba(0, 202, 235, 0.1);
-  --primary-color3: #06093B;
+  --primary-color3: #06093b;
   --primary-opcaity3: rgba(160, 68, 255, 0.1);
   --primary-color4: rgb(39, 174, 96);
   --primary-opcaity4: rgba(39, 174, 96, 0.1);
   --primary-color4-light: #f6fffc;
-  --primary-color5: #06093B;
+  --primary-color5: #06093b;
   --primary-opcaity5: rgba(255, 76, 76, 0.1);
   --primary-color6: rgb(47, 128, 237);
   --primary-opcaity6: rgba(47, 128, 237, 0.1);
@@ -2143,7 +2143,13 @@ header.style-1 .main-nav ul li.menu-item-has-children > i {
     z-index: 99999;
     height: 100%;
     overflow: auto;
-    background: var(--dark-bg);
+    background: linear-gradient(
+        to bottom,
+        rgba(6, 9, 59, 0.15),
+        rgba(0, 0, 0, 0.8)
+      ),
+      #06093b;
+
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
   }
@@ -7475,11 +7481,12 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu > li a.active {
  Footer section
 =================================================*/
 footer {
-  background-image: linear-gradient(
-      rgba(18, 19, 24, 0.9),
-      rgba(18, 19, 24, 0.9)
+  background: linear-gradient(
+      to bottom,
+      rgba(6, 9, 59, 0.15),
+      rgba(0, 0, 0, 0.8)
     ),
-    url("../assets/images/bg/footer1-bg.png");
+    #06093b;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -8510,8 +8517,8 @@ inner-banner-section
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/images/bg/inner-banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .inner-banner {
@@ -9959,27 +9966,25 @@ ul.blog-details-list li::after {
   cursor: pointer;
 }
 
-
-
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #06093b; 
-  border-radius: 10px; 
+  background: #06093b;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0a1f4d; 
+  background: #0a1f4d;
 }
 
 /* For Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #06093b #f1f1f1; 
+  scrollbar-color: #06093b #f1f1f1;
 }
